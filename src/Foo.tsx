@@ -1,11 +1,12 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import styled from "@emotion/styled";
+import { RouteComponentProps } from "@reach/router";
 
 const Red = styled.div`
   color: red;
 `;
 
-const Foo = () => <Red>foo</Red>;
+const Foo: FunctionComponent<RouteComponentProps> = () => <Red>foo</Red>;
 
 export default Foo;
 

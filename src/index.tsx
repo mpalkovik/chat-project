@@ -1,9 +1,9 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import { render } from "react-dom";
-import { Router } from "@reach/router";
+import { RouteComponentProps, Router } from "@reach/router";
 import Foo from "./Foo";
 
-const Home = () => <div>CHAT</div>;
+const Home: FunctionComponent<RouteComponentProps> = () => <div>CHAT</div>;
 
 function App() {
   return (
