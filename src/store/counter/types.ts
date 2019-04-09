@@ -5,12 +5,12 @@ export interface ICounterState {
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 
-interface IActionIncrement {
+export interface IActionIncrement {
   type: typeof INCREMENT;
   value: number;
 }
 
-interface IActionDecrement {
+export interface IActionDecrement {
   type: typeof DECREMENT;
   value: number;
 }
