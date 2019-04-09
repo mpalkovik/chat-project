@@ -1,13 +1,12 @@
 {
-  "include": ["./src/*"],
   "compilerOptions": {
-    "lib": ["dom", "esnext"],
-    "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "~*": ["./src/*"]
-    },
+    "target": "es5",
+    "module": "commonjs",
     "strict": true,
-    "esModuleInterop": true
+    "jsx": "react",
+    "incremental": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "lib": ["dom", "esnext"]
   }
 }
