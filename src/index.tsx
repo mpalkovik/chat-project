@@ -1,16 +1,17 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import { render } from "react-dom";
-import { RouteComponentProps, Router } from "@reach/router";
-import Foo from "./Foo";
+import { Provider } from "react-redux";
+import "./main.css";
+import Router from "./Router";
+import configureStore from "./store";
 
-const Home: FunctionComponent<RouteComponentProps> = () => <div>CHAT</div>;
+const store = configureStore();
 
 function App() {
   return (
-    <Router>
-      <Home path="/" />
-      <Foo path="foo" />
-    </Router>
+    <Provider store={store}>
+      <Router />
+    </Provider>
   );
 }
 
