@@ -1,26 +1,32 @@
 import React, { FC } from "react";
+import * as colors from "../../style/colors";
 import styled from "@emotion/styled";
-import { RouteComponentProps } from "@reach/router";
-import iconChildren from "../../static/svg/icon-therapy-type-deti-do-3-rokov.svg";
 
+interface IProps {
+  src: string;
+  backgroundColor?:
+    | "aquaBlue"
+    | "butterScotch"
+    | "pinkyPurple"
+    | "shamrockGreen";
+}
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 113px;
+  height: 120px;
+  margin-top: 32px;
 `;
-
 const IconWrapper = styled.span`
-  display: inline-block;
-  text-align: center;
   width: 98.8px;
   height: 89.4px;
-  background-color: #00b5e2;
+  display: inline-block;
+  text-align: center;
+  background-color: ${props => props.color};
 `;
 
-const Icons: FC<RouteComponentProps> = () => (
+const Icons: FC<IProps> = ({ src, backgroundColor = "aquaBlue" }) => (
   <Wrapper>
-    <IconWrapper>
-      <img src={iconChildren} />
+    <IconWrapper color={colors[backgroundColor]}>
+      <img src={src} />
     </IconWrapper>
   </Wrapper>
 );
