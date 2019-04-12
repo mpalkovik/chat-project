@@ -1,29 +1,32 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
-// import chatImg from "../../static/png/g";
-import { RouteComponentProps } from "@reach/router";
+import chatImg from "../../static/svg/chatLogo.png";
 import Menu from "../Header/menu";
 import UserButton from "./userButton";
-
-const Wrapper = styled.div`
-  width: 100%;
-`;
+import { paleLilac } from "../../style/colors";
+import ImageHeader from "./imageHeader";
 
 const ComponentWrapper = styled.div`
-  margin-top: 16px;
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
 `;
 
-const Chat = styled.img``;
+const Divider = styled.div`
+  background: ${paleLilac};
+  height: 1px;
+`;
 
-const Header: FC<RouteComponentProps> = () => (
-  <Wrapper>
+const Header: FC = () => (
+  <div>
     <ComponentWrapper>
       <Menu />
-      {/* <Chat src={chatImg} /> */}
+      <ImageHeader src={chatImg} width={73} height={27} />
       <UserButton />
     </ComponentWrapper>
-  </Wrapper>
+    <Divider />
+  </div>
 );
 
 export default Header;

@@ -1,13 +1,7 @@
 import React, { FC } from "react";
-import styled from "@emotion/styled";
 import menuIcon from "../../static/svg/menu.svg";
+import ImageHeader from "./imageHeader";
 
-const ImageMenu = styled.img`
-  width: 64px;
-  height: 64px;
-  margin-left: 16px;
-`;
-
-const Menu: FC = () => <ImageMenu src={menuIcon} />;
+const Menu: FC = () => <ImageHeader src={menuIcon} marginLeft={16} />;
 
 export default Menu;

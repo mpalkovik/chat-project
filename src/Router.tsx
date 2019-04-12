@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./components/Home";
 import Example from "./components/Example";
 import Counter from "./components/Counter";
-import Header from "./components/Header/header";
+import Testing from "./components/Testing";
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
       <Home path="/" />
       <Example path="foo" />
       <Counter path="counter" />
-      <Header path="header"/>
+      <Testing path="test" />
     </Router>
   );
 };
