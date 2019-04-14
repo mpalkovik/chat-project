@@ -7,6 +7,7 @@
     "start": "parcel src/index.html --open --no-autoinstall",
     "build": "parcel build src/index.html",
     "clear": "rm -rf .cache/ dist/",
+    "check": "npm run test && npm run format && npm run lint && npm run typecheck",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "lint": "tslint --project .",
