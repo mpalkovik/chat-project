@@ -6,11 +6,19 @@ import UserButton from "./userButton";
 import { paleLilac } from "../../style/colors";
 import ImageHeader from "./imageHeader";
 
-const ComponentWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 64px;
+
+  @media (min-width: 920px) {
+    height: 48px;
+    .chatLogo {
+      order: -1;
+      margin-left: 48px;
+    }
+  }
 `;
 
 const Divider = styled.div`
@@ -20,11 +28,11 @@ const Divider = styled.div`
 
 const Header: FC = () => (
   <div>
-    <ComponentWrapper>
+    <Wrapper>
       <Menu />
-      <ImageHeader src={chatImg} width={73} height={27} />
+      <ImageHeader src={chatImg} width={73} height={27} className="chatLogo" />
       <UserButton />
-    </ComponentWrapper>
+    </Wrapper>
     <Divider />
   </div>
 );

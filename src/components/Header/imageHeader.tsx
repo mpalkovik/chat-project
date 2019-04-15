@@ -6,6 +6,9 @@ interface IProps {
   height?: number;
   marginLeft?: number;
   marginRight?: number;
+  order?: number;
+  display?: string;
+  className?: string;
 }
 
 const ImageHeader: FC<IProps> = ({
@@ -13,13 +16,17 @@ const ImageHeader: FC<IProps> = ({
   width,
   height,
   marginLeft,
-  marginRight
+  marginRight,
+  order,
+  display,
+  className
 }) => (
   <img
-    style={{ marginLeft, marginRight }}
+    style={{ marginLeft, marginRight, order, display }}
     src={src}
     width={width}
     height={height}
+    className={className}
   />
 );
 
