@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
-import "./main.css";
+import "./reset.css";
+import "./fonts.css";
 import Router from "./Router";
 import configureStore from "./store";
 
