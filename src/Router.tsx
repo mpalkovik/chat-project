@@ -11,7 +11,7 @@ export default () => {
       <Home path="/" />
       <Example path="foo" />
       <Counter path="counter" />
-      <Testing path="test" />
+      <Testing path="testing" />
     </Router>
   );
 };

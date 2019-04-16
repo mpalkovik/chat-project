@@ -14,7 +14,8 @@ import Phone from "../components/icons/Phone";
 import Place from "../components/icons/Place";
 import Power from "../components/icons/Power";
 import Email from "../components/icons/Email";
-import "../main.css";
+import "../reset.css";
+import "../fonts.css";
 
 storiesOf("Example", module).add("example", () => <Example />);
 storiesOf("Icons", module).add("full checkbox", () => <FullCheckbox />);
