@@ -1,21 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Example from "../components/Example";
-import FooterMobile from "../components/footer/FooterMobile";
-import FooterDesktop from "../components/footer/FooterDesktop";
-import FullCheckbox from "../components/icons/FullCheckbox";
-import EmptyCheckbox from "../components/icons/EmptyCheckbox";
-import RadioFull from "../components/icons/RadioFull";
-import RadioEmpty from "../components/icons/RadioEmpty";
-import Cogs from "../components/icons/Cogs";
-import EuroSign from "../components/icons/EuroSign";
-import IdBadge from "../components/icons/IdBadge";
-import Phone from "../components/icons/Phone";
-import Place from "../components/icons/Place";
-import Power from "../components/icons/Power";
-import Email from "../components/icons/Email";
-import "../reset.css";
-import "../fonts.css";
+import "../style/index.css";
+import "../style/fonts.css";
 
 storiesOf("Example", module).add("example", () => <Example />);
 storiesOf("Icons", module).add("full checkbox", () => <FullCheckbox />);
