@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Example from "../components/Example";
-import "../reset.css";
-import "../fonts.css";
+import "../style/index.css";
+import "../style/fonts.css";
 
 storiesOf("Example", module).add("example", () => <Example />);
