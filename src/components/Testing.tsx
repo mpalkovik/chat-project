@@ -14,6 +14,9 @@ const Testing: FC<RouteComponentProps> = () => (
       <ButtonExample text="Nákup kreditov" backgroundColor="black" />
       <ButtonExample text="Nákup kreditov" backgroundColor="orangeRed" />
       <ButtonExample text="Nákup kreditov" backgroundColor="shamrockGreen" />
+      <div className="p-4 bg-red border-red-dark border border-solid font-gilbert">
+        test tailwind
+      </div>
     </Wrapper>
   </div>
 );
