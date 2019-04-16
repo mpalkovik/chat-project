@@ -1,48 +1,59 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
 import styled from "@emotion/styled";
-import Description from "./Description";
+import Text from "../Text";
 import HomepageList from "./HomepageList";
 import Button from "../Button";
 
-const ContentWrapper = styled.div`
-  margin: 0 auto;
-  width: 20%;
-  height: 250px;
-  background-color: white;
+const Wrapper = styled.div`
+  background-color: grey;
+  width: 100%;
+`;
+const DescrWrapper = styled.div`
+  @media (min-width: 840px) {
+    padding: 3em 22em 3em 22em;
+  }
+  padding: 3em 1.5em 3em 1.5em;
 `;
 const ButtonWrapper = styled.div`
   width: 163px;
   height: 40px;
-  margin: auto;
+  padding-top: 1.5em;
+  margin: 0 auto;
 `;
-const HomepageScreen: FC<RouteComponentProps> = () => (
-  <div>
-    <Description
-      description="CHAT je unikátnym
-medzinárodným
-arteterapeutickým
-centrom v Košiciach
-pre deti, mládež
-a dospelých,
-ktoré sa zaoberá
-liečbou umením
-použitím nielen
-tradičných foriem
-umenia, ale aj
-digitálneho umenia."
-    />
+const Container: FC = () => (
+  <Wrapper>
+    <DescrWrapper>
+      <Text
+        fontSize={36}
+        fontFamily="Gilbert"
+        text="CHAT je unikátnym
+        medzinárodným
+        arteterapeutickým
+        centrom v Košiciach
+        pre deti, mládež
+        a dospelých,
+        ktoré sa zaoberá
+        liečbou umením
+        použitím nielen
+        tradičných foriem
+        umenia, ale aj
+        digitálneho umenia."
+      />
+    </DescrWrapper>
     <HomepageList />
-    <ContentWrapper>
-      <Description
-        description="Vyskúšajte si CHAT.
-Registrujte sa a získajte
-prvú hodinu zdarma."
+    <DescrWrapper>
+      <Text
+        fontSize={36}
+        fontFamily="Gilbert"
+        text="Vyskúšajte si CHAT.
+        Registrujte sa a získajte
+        prvú hodinu zdarma."
       />
       <ButtonWrapper>
         <Button text="Registrovať sa" backgroundColor="black" />
       </ButtonWrapper>
-    </ContentWrapper>
-  </div>
+    </DescrWrapper>
+  </Wrapper>
 );
-export default HomepageScreen;
+export default Container;

@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 
 interface IProps {
   src: string;
+  title: string;
   backgroundColor?:
     | "aquaBlue"
     | "butterScotch"
@@ -11,23 +12,36 @@ interface IProps {
     | "shamrockGreen";
 }
 const Wrapper = styled.div`
-  width: 113px;
-  height: 120px;
-  margin-top: 32px;
+  padding: 25px;
 `;
-const IconWrapper = styled.span`
+const IconWrapper = styled.div`
+  width: 100%;
+  height: 130px;
+  text-align: center;
+`;
+const IconBackground = styled.span`
   width: 98.8px;
   height: 89.4px;
   display: inline-block;
-  text-align: center;
   background-color: ${props => props.color};
 `;
-
-const Icons: FC<IProps> = ({ src, backgroundColor = "aquaBlue" }) => (
+const Title = styled.div`
+  width: 100%;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: center;
+  color: ${colors.black};
+`;
+const Icons: FC<IProps> = ({ src, title, backgroundColor = "aquaBlue" }) => (
   <Wrapper>
-    <IconWrapper color={colors[backgroundColor]}>
-      <img src={src} />
+    <IconWrapper>
+      <IconBackground color={colors[backgroundColor]}>
+        <img src={src} />
+      </IconBackground>
     </IconWrapper>
+    <Title>{title}</Title>
   </Wrapper>
 );
 export default Icons;
