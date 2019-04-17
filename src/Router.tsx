@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Example from "./components/Example";
 import Counter from "./components/Counter";
 import Testing from "./components/Testing";
+import Footer from "./components/footer/Footer";
 
 export default () => {
   return (
@@ -12,6 +13,7 @@ export default () => {
       <Example path="foo" />
       <Counter path="counter" />
       <Testing path="testing" />
+      <Footer path="footer" />
     </Router>
   );
 };
