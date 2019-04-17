@@ -5,6 +5,7 @@ import Menu from "../Header/menu";
 import UserButton from "./userButton";
 import { paleLilac } from "../../style/colors";
 import ImageHeader from "./imageHeader";
+import Navigation from "./navigation";
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,6 +14,9 @@ const Wrapper = styled.div`
   height: 64px;
 
   @media (min-width: 920px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 48px;
     .chatLogo {
       order: -1;
@@ -31,6 +35,7 @@ const Header: FC = () => (
     <Wrapper>
       <Menu />
       <ImageHeader src={chatImg} width={73} height={27} className="chatLogo" />
+      <Navigation />
       <UserButton />
     </Wrapper>
     <Divider />
