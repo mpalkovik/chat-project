@@ -6,24 +6,20 @@ import ICO from "./ICO";
 import Contacts from "./Contacts";
 import Location from "./Location";
 
-const Wrapper = styled.div`
-  height: 400px;
-`;
-
 const Footer: FC<RouteComponentProps> = () => (
-  <Wrapper className="bg-maize  ">
+  <div className="bg-maize lg:pl-16 ">
     <Logo />
     <div className="lg:flex">
-      <div className="pb-6 ">
+      <div className="pb-6 pr-8">
         <ICO />
       </div>
 
-      <div className="flex pt-5 ">
+      <div className="flex pt-6 pb-12">
         <Location />
         <Contacts />
       </div>
     </div>
-  </Wrapper>
+  </div>
 );
 
 export default Footer;

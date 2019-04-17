@@ -10,9 +10,9 @@ const Street = styled.div`
 `;
 
 const ChatLocation: FC = () => (
-  <div className="pl-6 pr-6 lg-pr-12 lg-pl-8">
+  <div className="pl-6 pr-4 lg:pr-12 lg:pl-8">
     <div className="flex justify-start items-center">
-      <div className="pr-3 w-7 flex items-start h-8 ">
+      <div className="mr-3 w-4 flex items-start h-8 ">
         <Icons src={Place} />
       </div>
       <Street className="text-black font-normal font-lato text-xs">
