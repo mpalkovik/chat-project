@@ -11,7 +11,7 @@ import individualIcon from "../../static/svg/icon-therapy-type-pre-dospelych-cop
 
 const Wrapper = styled.div`
   @media (min-width: 840px) {
-    margin: 50px;
+    margin: 56px;
   }
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   margin: auto;
   background-color: ${white};
   position: relative;
-  padding: 1.5em 0em 1.5em 0em;
+  padding: 24px;
 `;
 const IconWrapper = styled.div`
   @media (min-width: 840px) {
@@ -31,22 +31,22 @@ const IconWrapper = styled.div`
   position: relative;
   width: 100%;
 `;
-const TitleWrapper = styled.div`
+const DescrWrapper = styled.div`
   @media (min-width: 840px) {
-    padding: 1.5em 10em 1.5em 10em;
+    padding: 16px 320px 16px 320px;
   }
-  padding: 1.5em;
+  padding: 16px;
 `;
 const HomepageList = () => (
   <Wrapper>
     <Text fontSize={31} fontFamily="Gilbert" text="Arteterapie" />
-    <TitleWrapper>
+    <DescrWrapper>
       <Text
         fontSize={16}
         fontFamily="Lato"
         text="Naše arteterapie sú vhodné pre deti, mládež ale aj dospelých so zdravotným znevýhodnením, problémami v učení, s poruchami správania alebo pre tých čo trpia traumami, stratami, smútkom, depresiou alebo vyhorením. Arteterapie vedia pomôcť tiež v medziľudských a rodinných vzťahoch."
       />
-    </TitleWrapper>
+    </DescrWrapper>
     <IconWrapper>
       <Icons
         src={smallChildrenIcon}

@@ -12,7 +12,7 @@ interface IProps {
     | "shamrockGreen";
 }
 const Wrapper = styled.div`
-  padding: 25px;
+  padding: 24px;
 `;
 const IconWrapper = styled.div`
   width: 100%;
@@ -34,8 +34,13 @@ const Title = styled.div`
   text-align: center;
   color: ${colors.black};
 `;
-const Icons: FC<IProps> = ({ src, title, backgroundColor = "aquaBlue" }) => (
-  <Wrapper>
+const Icons: FC<IProps> = ({
+  src,
+  title,
+  to,
+  backgroundColor = "aquaBlue"
+}) => (
+  <Wrapper to={to}>
     <IconWrapper>
       <IconBackground color={colors[backgroundColor]}>
         <img src={src} />

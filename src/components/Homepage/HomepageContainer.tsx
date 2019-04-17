@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { RouteComponentProps } from "@reach/router";
 import styled from "@emotion/styled";
 import Text from "../Text";
 import HomepageList from "./HomepageList";
