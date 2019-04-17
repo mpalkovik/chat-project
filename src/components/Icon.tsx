@@ -5,6 +5,6 @@ interface IProps {
   children?: ReactNode;
 }
 
-const Icons: FC<IProps> = props => <img src={props.src} className="w-full" />;
+const Icon: FC<IProps> = props => <img src={props.src} className="w-full" />;
 
-export default Icons;
+export default Icon;

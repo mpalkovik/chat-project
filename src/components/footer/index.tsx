@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import styled from "@emotion/styled";
 import Logo from "./Logo";
-import ICO from "./ICO";
+import ICO from "./Info";
 import Contacts from "./Contacts";
 import Location from "./Location";
 
@@ -13,8 +12,7 @@ const Footer: FC<RouteComponentProps> = () => (
       <div className="pb-6 pr-8">
         <ICO />
       </div>
-
-      <div className="flex pt-6 pb-12">
+      <div className="flex pt-6 pb-12 ">
         <Location />
         <Contacts />
       </div>

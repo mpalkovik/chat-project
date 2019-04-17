@@ -1,17 +1,12 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import styled from "@emotion/styled";
-
-interface IChat {
-  className?: string;
-  children?: ReactNode;
-}
 
 const Street = styled.div`
   width: 270px;
   height: 36px;
 `;
 
-const ChatICO = (props: IChat) => (
+const Info = () => (
   <Street className="pt-5 pl-6">
     <div className="text-xs font-lato font-black">
       OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou
@@ -23,4 +18,4 @@ const ChatICO = (props: IChat) => (
   </Street>
 );
 
-export default ChatICO;
+export default Info;
