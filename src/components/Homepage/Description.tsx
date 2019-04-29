@@ -6,7 +6,7 @@ interface IProps {
 
 const Description: FC<IProps> = ({ text }) => (
   <div>
-    <h1 className="font-gilbert text-3xl">{text}</h1>
+    <h1 className="font-gilbert text-4xl">{text}</h1>
   </div>
 );
 export default Description;

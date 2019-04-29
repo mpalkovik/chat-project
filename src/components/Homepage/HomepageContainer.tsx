@@ -15,7 +15,7 @@ const BackgroundImage = styled.div`
 const Container = () => (
   <BackgroundImage>
     <Logo />
-    <div className="w-4/5 m-auto text-center pt-24 pb-24 lg:w-1/2 ">
+    <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5 ">
       <Description
         text="CHAT je unikátnym
         medzinárodným
@@ -32,7 +32,7 @@ const Container = () => (
       />
     </div>
     <HomepageList />
-    <div className="w-4/5 m-auto text-center pt-24 pb-24 lg:w-1/2 ">
+    <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5 ">
       <Description
         text="Vyskúšajte si CHAT.
         Registrujte sa a získajte

@@ -1,12 +1,9 @@
 import React from "react";
-import logo from "../../static/svg/gilbert-color-font@3x.png";
+import logo from "../../static/svg/logo-color-big.png";
 
 const Logo = () => (
-  <div className="hidden lg:flex flex-row justify-center m-auto pt-32 pb-32 md:flex ">
-    <img src={logo} className="w-2/5 lg:w-1/5" />
-    <h1 className="font-gilbert text-4xl w-2/5 lg:w-1/5">
-      Centrum pre kreatívnu liečbu arteterapiou
-    </h1>
+  <div className="hidden lg:flex w-full justify-center pt-4 pb-24 md:flex ">
+    <img src={logo} />
   </div>
 );
 export default Logo;
