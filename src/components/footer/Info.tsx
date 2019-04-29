@@ -1,13 +1,7 @@
 import React from "react";
-import styled from "@emotion/styled";
-
-const Street = styled.div`
-  width: 270px;
-  height: 36px;
-`;
 
 const Info = () => (
-  <Street className="pt-5 pl-6">
+  <div className="pt-5 pl-6 w-64 h-10">
     <div className="text-xs font-lato font-black">
       OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou
     </div>
@@ -15,7 +9,7 @@ const Info = () => (
       <div>IČO: 42407681</div>
       <div>Číslo účtu: VÚB SK13 0200 0000 0035 0237 4057</div>
     </div>
-  </Street>
+  </div>
 );
 
 export default Info;

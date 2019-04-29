@@ -1,0 +1,31 @@
+   .bg-cover-image{
+        background-image: url('../static/svg/yellowfooterbig.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120%;
+        height: 600px;
+        background-position-x: -200px;
+        z-index: 0;
+    } 
+    .lg\:bg-cover-image {
+      height: 600px;
+      background-size: cover;
+      background-size: 175%;
+      background-position-x: -130px;
+      background-image: url('../static/svg/oval-mobile.svg');
+      z-index: 0;
+    }
+
+    .bg-oval{
+      background-image: url('../static/svg/ovals.svg');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 292.6px;
+      height: 408.7px;
+      right: 0;
+   } 
+    .lg\:bg-oval {
+      background-image: url('../static/svg/ovals.svg');
+      height: 320px;
+   }

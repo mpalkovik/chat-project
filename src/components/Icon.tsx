@@ -1,8 +1,7 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 interface IProps {
   src: string;
   className?: string;
-  children?: ReactNode;
 }
 
 const Icon: FC<IProps> = props => <img src={props.src} className="w-full" />;
