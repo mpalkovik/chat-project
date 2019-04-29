@@ -1,44 +1,19 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
+import React from "react";
 import chatImg from "../../static/svg/chatLogo.png";
-import Menu from "../Header/menu";
-import UserButton from "./userButton";
-import { paleLilac } from "../../style/colors";
-import ImageHeader from "./imageHeader";
-import Navigation from "./navigation";
+import Menu from "./Menu";
+import UserButton from "./UserButton";
+import ImageHeader from "./ImageHeader";
+import Navigation from "./Navigation";
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 64px;
-
-  @media (min-width: 920px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    .chatLogo {
-      order: -1;
-      margin-left: 48px;
-    }
-  }
-`;
-
-const Divider = styled.div`
-  background: ${paleLilac};
-  height: 1px;
-`;
-
-const Header: FC = () => (
+const Header = () => (
   <div>
-    <Wrapper>
+    <div className="flex justify-between items-center content-center h-16 lg:h-12 flex justify-between items-center content-center w-full">
       <Menu />
-      <ImageHeader src={chatImg} width={73} height={27} className="chatLogo" />
+      <ImageHeader src={chatImg} width={73} height={27} className="lg:ml-12" />
       <Navigation />
       <UserButton />
-    </Wrapper>
-    <Divider />
+    </div>
+    <div className="bg-lilac h-px" />
   </div>
 );
 

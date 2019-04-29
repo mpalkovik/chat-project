@@ -1,26 +1,9 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
-import { black } from "../../style/colors";
+import React from "react";
 
-const Wrapper = styled.div`
-  display: none;
-
-  @media (min-width: 920px) {
-    display: inline-block;
-  }
-`;
-
-const UserToggleMenu = styled.span`
-  font-family: Gilbert;
-  font-size: 18px;
-  font-weight: bold;
-  color: ${black};
-`;
-
-const UserMenu: FC = () => (
-  <Wrapper>
-    <UserToggleMenu>FS</UserToggleMenu>
-  </Wrapper>
+const UserMenu = () => (
+  <div className="hidden lg:inline-block">
+    <h3 className="font-gilbert">FS</h3>
+  </div>
 );
 
 export default UserMenu;

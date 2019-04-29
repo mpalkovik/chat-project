@@ -1,35 +1,10 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
-import { aquaBlue, black } from "../../style/colors";
+import React from "react";
 
-const Wrapper = styled.div`
-  display: none;
-
-  @media (min-width: 920px) {
-    display: inline-block;
-  }
-`;
-
-const UserName = styled.div`
-  height: 20px;
-  font-family: Gilbert;
-  font-size: 16px;
-  font-weight: bold;
-  color: ${black};
-`;
-
-const Credit = styled.div`
-  font-family: Lato;
-  font-size: 10px;
-  font-weight: bold;
-  color: ${aquaBlue};
-`;
-
-const UserProfile: FC = () => (
-  <Wrapper>
-    <UserName>Feri Schwartzeneger</UserName>
-    <Credit>Kredit 10 €</Credit>
-  </Wrapper>
+const UserProfile = () => (
+  <div className="hidden lg:inline-block">
+    <h4 className="h-5 font-gilbert">Feri Schwartzeneger</h4>
+    <h6 className="text-blue font-lato">Kredit 10 €</h6>
+  </div>
 );
 
 export default UserProfile;

@@ -1,43 +1,22 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
+import React from "react";
 import userIcon from "../../static/svg/userIcon.svg";
-import { paleLilac } from "../../style/colors";
-import ImageHeader from "./imageHeader";
-import UserProfile from "./userProfile";
-import UserMenu from "./userMenu";
+import ImageHeader from "./ImageHeader";
+import UserProfile from "./UserProfile";
+import UserMenu from "./UserMenu";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-
-  @media (min-width: 920px) {
-    .userIcon {
-      display: none;
-    }
-    width: 194px;
-    margin-right: 40px;
-  }
-`;
-
-const Background = styled.div`
-  width: 32px;
-  height: 32px;
-  border-radius: 12px;
-  background: ${paleLilac};
-  margin-right: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const UserButton: FC = () => (
-  <Wrapper>
-    <Background>
+const UserButton = () => (
+  <div className="flex flex-row w-auto lg:mr-10 w-48 flex flex-row">
+    <div className="w-8 h-8 rounded-lg mr-4 flex items-center justify-center bg-lilac">
       <UserMenu />
-      <ImageHeader src={userIcon} width={16} height={16} className="userIcon" />
-    </Background>
+      <ImageHeader
+        src={userIcon}
+        width={16}
+        height={16}
+        className="flex flex-row lg:hidden"
+      />
+    </div>
     <UserProfile />
-  </Wrapper>
+  </div>
 );
 
 export default UserButton;
