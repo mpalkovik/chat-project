@@ -7,4 +7,3 @@ export const shamrockGreen = "#00c65e";
 export const maize = "#ffc450";
 export const pinkyPurple = "#db3eb1";
 export const aquaBlue = "#00b5e2";
-export const butterScotch = "#ffc450";

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import Homepage from "../components/Homepage/HomepageContainer";
+import Homepage from "./Homepage/Container";
 
 const Home: FC<RouteComponentProps> = () => (
   <div>

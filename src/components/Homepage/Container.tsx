@@ -1,8 +1,8 @@
 import React from "react";
-import HomepageList from "./HomepageList";
+import HomepageList from "./List";
 import Button from "./Button";
 import Description from "./Description";
-import Logo from "../Homepage/Logo";
+import Logo from "./Logo";
 import styled from "@emotion/styled";
 import background from "../../static/svg/group-13.svg";
 

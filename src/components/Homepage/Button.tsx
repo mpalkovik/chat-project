@@ -6,7 +6,7 @@ interface IProps {
 
 const Button: FC<IProps> = ({ text }) => (
   <div className="w-full h-10 flex justify-center items-center">
-    <h4 className="font-lato h-6">{text}</h4>
+    <h4 className="font-lato">{text}</h4>
   </div>
 );
 
