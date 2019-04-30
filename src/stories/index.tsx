@@ -7,7 +7,7 @@ import Header from "../components/Header/Header";
 
 storiesOf("Example", module).add("example", () => <Example />);
 storiesOf("Header", module).add("responsive desktop header", () => (
-  <div className="w-full">
+  <div className="lg:w-full">
     <Header />
   </div>
 ));
