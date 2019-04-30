@@ -32,13 +32,13 @@ const Container = () => (
       />
     </div>
     <HomepageList />
-    <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5 ">
+    <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5">
       <Description
         text="Vyskúšajte si CHAT.
         Registrujte sa a získajte
         prvú hodinu zdarma."
       />
-      <div className="w-48 m-auto mt-6 bg-black text-white font-black rounded-lg ">
+      <div className="w-48 m-auto mt-6 bg-black text-white font-black rounded-lg">
         <Button text="Registrovať sa" />
       </div>
     </div>
