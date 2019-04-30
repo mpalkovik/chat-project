@@ -4,7 +4,7 @@ import ImageHeader from "./ImageHeader";
 
 const Menu = () => (
   <div className="inline-block lg:hidden">
-    <ImageHeader src={menuIcon} marginLeft={16} />
+    <ImageHeader src={menuIcon} className="ml-4" />
   </div>
 );
 

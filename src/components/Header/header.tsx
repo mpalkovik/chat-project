@@ -9,7 +9,7 @@ const Header = () => (
   <div>
     <div className="flex justify-between items-center content-center h-16 lg:h-12 flex justify-between items-center content-center w-full">
       <Menu />
-      <ImageHeader src={chatImg} width={73} height={27} className="lg:ml-12" />
+      <ImageHeader src={chatImg} width={73} className="h-6 lg:ml-12" />
       <Navigation />
       <UserButton />
     </div>

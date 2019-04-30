@@ -8,12 +8,7 @@ const UserButton = () => (
   <div className="flex flex-row w-auto lg:mr-10 w-48 flex flex-row">
     <div className="w-8 h-8 rounded-lg mr-4 flex items-center justify-center bg-lilac">
       <UserMenu />
-      <ImageHeader
-        src={userIcon}
-        width={16}
-        height={16}
-        className="flex flex-row lg:hidden"
-      />
+      <ImageHeader src={userIcon} className="flex flex-row h-4 w-4 lg:hidden" />
     </div>
     <UserProfile />
   </div>
