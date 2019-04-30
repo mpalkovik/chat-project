@@ -7,3 +7,8 @@ import "../style/fonts.css";
 
 storiesOf("Example", module).add("example", () => <Example />);
 storiesOf("Homepage", module).add("homepage", () => <Homepage />);
+storiesOf("Homepage", module).add("responsive homepage", () => (
+  <div className="w-">
+    <Homepage />
+  </div>
+));
