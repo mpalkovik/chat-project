@@ -6,13 +6,13 @@ import "../style/fonts.css";
 import Header from "../components/Header/Header";
 
 storiesOf("Example", module).add("example", () => <Example />);
-storiesOf("Header", module).add("responsive desktop header", () => (
-  <div className="lg:w-full">
+storiesOf("Header", module).add("desktop version", () => (
+  <div className="w-full">
     <Header />
   </div>
 ));
-storiesOf("Header", module).add("responsive mobile header", () => (
-  <div className="w-1/2">
+storiesOf("Header", module).add("mobile version", () => (
+  <div className="lg:w-full">
     <Header />
   </div>
 ));

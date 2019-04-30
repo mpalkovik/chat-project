@@ -1,5 +1,5 @@
 var tailwindcss = require("tailwindcss");
 
 module.exports = {
-  plugins: [tailwindcss("./tailwind.js")]
+  plugins: [require("postcss-import"), tailwindcss("./tailwind.js")]
 };

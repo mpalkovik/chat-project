@@ -1,3 +1,5 @@
+@import "./custom.css";
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -60,8 +62,3 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
-@import "./custom.css";
-.link {
-    @apply font-gilbert no-underline inline-block font-bold text-base text-black;
- }
