@@ -20,13 +20,31 @@
        width: 292.6px;
        height: 408.7px;
        right: 0;
-       top: 100px;
+       top: 30px;
     } 
      .lg\:bg-oval {
        background-image: url('../static/svg/ovals.svg');
        width: 210.6px;
        height: 240.7px;
-       top: 80px;
+       top: 20px;
+    } 
+    .social-icons{
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      padding-right: 64px;
+      padding-bottom: 128px;
+    }
+    .lg\:social-icons{
+      padding-right: 40px;
+      padding-bottom: 230px;
+    }
+    .overflow-ovals{
+      position: absolute;
+      overflow: hidden;
+      width: 292.6px;
+      height: 408.7px;
+      right: 0px;
     }
    }
 
