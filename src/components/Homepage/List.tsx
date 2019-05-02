@@ -12,7 +12,7 @@ import greenOval from "../../static/svg/greenOval.svg";
 
 const HomepageList = () => (
   <div className="flex flex-col items-center m-0 bg-white relative p-6 lg:m-12 text-center">
-    <h1 className="font-gilbert">Arteterapie</h1>
+    <h1 className="font-gilbert text-2xl">Arteterapie</h1>
     <h4 className="pt-6 pb-8 font-lato font-normal lg:w-3/4  ">
       Naše arteterapie sú vhodné pre deti, mládež ale aj dospelých so zdravotným
       znevýhodnením, problémami v učení, s poruchami správania alebo pre tých čo

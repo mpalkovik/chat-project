@@ -15,11 +15,13 @@ const Oval: any = styled.span`
   background-repeat: no-repeat;
 `;
 const Icon: FC<IProps> = ({ src, url, title, to }) => (
-  <Link className="p-6 no-underline m-3" to={to}>
+  <Link className="p-6 no-underline m-1" to={to}>
     <Oval url={url}>
       <img src={src} />
     </Oval>
-    <h4 className="w-full font-lato text-center text-black pt-4">{title}</h4>
+    <h4 className="w-full font-lato font-bold text-center text-black pt-4">
+      {title}
+    </h4>
   </Link>
 );
 export default Icon;
