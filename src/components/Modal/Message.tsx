@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 interface IProps {
-  text?: string;
+  text: string;
 }
 
 const Message: FC<IProps> = ({ text }) => (

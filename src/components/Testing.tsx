@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import PopupsMobile from "../components/PopupsMobile/PopupsMobile";
 
-const Testing: FC<RouteComponentProps> = () => <PopupsMobile />;
+const Testing: FC<RouteComponentProps> = () => <div />;
 
 export default Testing;
