@@ -1,22 +1,18 @@
-import React, { FC } from "react";
-import { RouteComponentProps } from "@reach/router";
+import React from "react";
 import TherapyButton from "./TherapyButton/TherapyButton";
 import TherapyDescription from "./TherapyDescription/TherapyDescription";
 import TherapyImage from "./TherapyImage/TherapyImage";
 import TherapyName from "./TherapyName/TherapyName";
 
-
-  box-shadow: 4px 16px 32px 0 rgba(0, 0, 0, 0.1);
-  background-color: var(--white);
-
-
-const Therapy: FC<RouteComponentProps> = () => {
+const Therapy = () => {
   return (
-    <div className="bg-white " width={230} height={304} bc->
-      <TherapyImage />
-      <TherapyName />
-      <TherapyDescription />
-      <TherapyButton />
+    <div className="container ml-6 ">
+      <div className="p-2 w-1/5 h-1/3 m-2 shadow mr-2 mb-2 block ">
+        <TherapyImage />
+        <TherapyName />
+        <TherapyDescription />
+        <TherapyButton />
+      </div>
     </div>
   );
 };

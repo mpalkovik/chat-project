@@ -1,8 +1,9 @@
 import React from "react";
+
 import picture from "./homer.svg";
 
 const TherapyImage = () => {
-  return <img className="m-8px" src={picture} width={214} height={160} />;
+  return <img className="mb-2" src={picture} />;
 };
 
 export default TherapyImage;

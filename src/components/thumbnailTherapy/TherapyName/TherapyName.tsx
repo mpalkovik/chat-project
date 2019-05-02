@@ -1,24 +1,13 @@
 import React from "react";
-import styled from "@emotion/styled";
-
-const Name = styled.p`
-  width: 108px;
-  height: 28px;
-  font-family: Gilbert;
-  font-size: 21px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  color: var(--black);
-  margin: 0 8px;
-`;
 
 const ThumbnailName = "MAMA CHAT";
 
 const TherapyName = () => {
-  return <Name>{ThumbnailName}</Name>;
+  return (
+    <p className="font-Gilbert font-bold roman text-xl text-black leading-1.33 ">
+      {ThumbnailName}
+    </p>
+  );
 };
 
 export default TherapyName;

@@ -1,25 +1,11 @@
 import React from "react";
-import styled from "@emotion/styled";
-
-const Button = styled.button`
-  width: 214px;
-  height: 40px;
-  border-style: none;
-  border-radius: 12px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  background-color: var(--white);
-  margin: 16px 8px;
-  border-radius: 12px;
-  font-weight: bold;
-  :hover {
-    background-color: #333333;
-    color: white;
-  }
-  cursor: pointer;
-`;
 
 const TherapyButton = () => {
-  return <Button>Zistiť viac</Button>;
+  return (
+    <button className=" rounded-lg bg-transparent w-full h-10 font-bold text-black hover:text-white hover:bg-black text-black ">
+      Zistiť viac
+    </button>
+  );
 };
 
 export default TherapyButton;
