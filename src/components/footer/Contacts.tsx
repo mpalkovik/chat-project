@@ -15,7 +15,7 @@ const Contacts = () => (
       <div className="mr-3 w-8 lg:w-4">
         <Icon src={Email} />
       </div>
-      <div className="font-lato text-xs black ">
+      <div className="font-lato text-xs">
         <a
           href="mailto:chatkosice@gmail.com"
           className="no-underline text-black"

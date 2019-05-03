@@ -6,4 +6,4 @@ import "../style/fonts.css";
 import Footer from "../components/footer";
 
 storiesOf("Example", module).add("example", () => <Example />);
-storiesOf("Footer", module).add("responsive footer", () => <Footer />);
+storiesOf("Footer", module).add("footer", () => <Footer />);
