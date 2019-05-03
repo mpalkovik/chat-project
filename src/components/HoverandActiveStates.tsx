@@ -6,7 +6,7 @@ const HoverandActiveStates: FC = () => (
     <div className="font-gilbert">
       <h1 className="flex items-center justify-center ">buttons</h1>
       <div className="text-xl">normal</div>
-      <PrimaryButton style="black" />
+      <PrimaryButton inverted={true} />
       <div className="text-xl">hover</div>
       <PrimaryButton />
       <div className="text-xl">pressed</div>
