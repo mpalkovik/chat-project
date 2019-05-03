@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 
-const TherapyButton = () => {
+interface IButton {
+  text: string;
+}
+
+const TherapyButton: FC<IButton> = ({ text }) => {
   return (
-    <button className=" rounded-lg bg-transparent w-full h-10 font-bold text-black hover:text-white hover:bg-black text-black ">
-      Zistiť viac
+    <button className=" rounded-lg bg-transparent w-full h-10 font-black font-lato text-black hover:text-white hover:bg-black text-black font-black">
+      {text}
     </button>
   );
 };

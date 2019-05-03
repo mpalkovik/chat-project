@@ -1,9 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
+import icon from "./homer.svg";
 
-import picture from "./homer.svg";
-
-const TherapyImage = () => {
-  return <img className="mb-2" src={picture} />;
+interface IImage {
+  icon: string;
+}
+const TherapyImage: FC<IImage> = ({ icon }) => {
+  return <img className="mb-2" alt="therapy-Image" src={icon} />;
 };
 
 export default TherapyImage;

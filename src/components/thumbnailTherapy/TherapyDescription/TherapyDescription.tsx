@@ -1,13 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 
-const ThumbnailDescr =
-  "Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]";
+export interface IDescribe {
+  text: string;
+}
 
-const TherapyDescription = () => {
+const TherapyDescription: FC<IDescribe> = ({ text }) => {
   return (
-    <p className=" text-sm leading-normal font-lato font-normal mb-4 ">
-      {ThumbnailDescr}
-    </p>
+    <p className=" text-sm leading-normal font-lato font-normal mb-4">{text}</p>
   );
 };
 

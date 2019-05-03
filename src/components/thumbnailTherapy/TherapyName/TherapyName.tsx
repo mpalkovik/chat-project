@@ -1,11 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 
-const ThumbnailName = "MAMA CHAT";
+interface IName {
+  text: string;
+}
 
-const TherapyName = () => {
+const TherapyName: FC<IName> = ({ text }) => {
   return (
     <p className="font-Gilbert font-bold roman text-xl text-black leading-1.33 ">
-      {ThumbnailName}
+      {text}
     </p>
   );
 };
