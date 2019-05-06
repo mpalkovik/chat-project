@@ -3,11 +3,9 @@ import React, { FC } from "react";
 interface IProps {
   src: string;
   width?: number;
-  className?: string;
+  className: string;
 }
 
-const ImageHeader: FC<IProps> = ({ src, width, className }) => (
+export const ImageHeader: FC<IProps> = ({ src, width = "auto", className }) => (
   <img src={src} width={width} className={className} />
 );
-
-export default ImageHeader;

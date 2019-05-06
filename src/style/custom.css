@@ -3,5 +3,5 @@
 }
 
 .userProfileLinks {
-  @apply font-lato no-underline text-black
+  @apply font-lato no-underline text-black text-sm;
 }
