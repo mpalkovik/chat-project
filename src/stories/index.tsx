@@ -1,14 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import KreditPopup from "../components/Modal/ModalStorybook/KreditPopup";
-import ErrorPopup from "../components/Modal/ModalStorybook/ErrorPopup";
-import RegistrationPopup from "../components/Modal/ModalStorybook/RegistrationPopup";
-import DisprovePopup from "../components/Modal/ModalStorybook/DisprovePopup";
+import KreditPopup from "../components/Popup/PopupStorybook/KreditPopup";
+import ErrorPopup from "../components/Popup/PopupStorybook/ErrorPopup";
+import RegistrationPopup from "../components/Popup/PopupStorybook/RegistrationPopup";
+import CancelReservation from "../components/Popup/PopupStorybook/CancelReservation";
 import "../style/index.css";
 import "../style/fonts.css";
 
-storiesOf("Modal", module)
-  .add("KreditModal", () => <KreditPopup />)
+storiesOf("Popups", module)
+  .add("KreditPopup", () => <KreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
-  .add("DisproveModal", () => <DisprovePopup />)
-  .add("ErrorModal", () => <ErrorPopup />);
+  .add("CancelReservation", () => <CancelReservation />)
+  .add("ErrorPopup", () => <ErrorPopup />);

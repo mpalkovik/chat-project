@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 
 interface IProps {
-  text?: string;
+  text: string;
   backgroundColor?: "black" | "red" | "green";
 }
 
-const ModalButton: FC<IProps> = ({ text, backgroundColor = "black" }) => (
+const PopupButton: FC<IProps> = ({ text, backgroundColor = "black" }) => (
   <div className="flex justify-center">
     <button className={`bg-${backgroundColor} h-10 w-5/6 rounded-lg  `}>
       <div className="text-white font-lato text-base">{text}</div>
@@ -13,4 +13,4 @@ const ModalButton: FC<IProps> = ({ text, backgroundColor = "black" }) => (
   </div>
 );
 
-export default ModalButton;
+export default PopupButton;

@@ -1,9 +1,0 @@
-export const black = "#333333";
-export const white = "#ffffff";
-export const warmGrey = "#999696";
-export const maize = "#ffc450";
-export const aquaBlue = "#00b5e2";
-export const orangeRed = "#f93822";
-export const paleLilac = "#ebebec";
-export const shamrockGree = "#00c65e";
-export const pinkyPurple = "#db3eb1";

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const MainModale: FC = props => (
+const MainPopup: FC = props => (
   <div
     style={{
       width: "343px",
@@ -12,4 +12,4 @@ const MainModale: FC = props => (
   </div>
 );
 
-export default MainModale;
+export default MainPopup;
