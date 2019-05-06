@@ -1,19 +1,13 @@
 /* tslint:disable */
 /*
-
 Tailwind - The Utility-First CSS Framework
-
 A project by Adam Wathan (@adamwathan), Jonathan Reinink (@reinink),
 David Hemphill (@davidhemphill) and Steve Schoger (@steveschoger).
-
 Welcome to the Tailwind config file. This is where you can customize
 Tailwind specifically for your project. Don't be intimidated by the
 length of this file. It's really just a big JavaScript object and
 we've done our very best to explain each section.
-
 View the full documentation at https://tailwindcss.com.
-
-
 |-------------------------------------------------------------------------------
 | The default config
 |-------------------------------------------------------------------------------
@@ -381,7 +375,6 @@ module.exports = {
     "20": "80px",
     "24": "96px",
     "48": "192px",
-    "60": "231px",
     "64": "256px",
     "1/2": "50%",
     "1/3": "33.33333%",
@@ -423,7 +416,6 @@ module.exports = {
     "4": "16px",
     "5": "20px",
     "6": "24px",
-    "7": "28px",
     "8": "32px",
     "10": "40px",
     "12": "48px",

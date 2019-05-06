@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Example from "../components/Example";
-import "../main.css";
 import "../style/index.css";
 import "../style/fonts.css";
 import Therapy from "../components/thumbnailTherapy/Therapy";
