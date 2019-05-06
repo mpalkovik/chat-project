@@ -5,7 +5,7 @@ interface IProps {
   backgroundColor?: "black" | "red" | "green";
 }
 
-const PopupButton: FC<IProps> = ({ text, backgroundColor = "black" }) => (
+const Button: FC<IProps> = ({ text, backgroundColor = "black" }) => (
   <div className="flex justify-center">
     <button className={`bg-${backgroundColor} h-10 w-5/6 rounded-lg  `}>
       <div className="text-white font-lato text-base">{text}</div>
@@ -13,4 +13,4 @@ const PopupButton: FC<IProps> = ({ text, backgroundColor = "black" }) => (
   </div>
 );
 
-export default PopupButton;
+export default Button;

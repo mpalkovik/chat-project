@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const MainPopup: FC = props => (
+const Index: FC = props => (
   <div
     style={{
       width: "343px",
@@ -12,4 +12,4 @@ const MainPopup: FC = props => (
   </div>
 );
 
-export default MainPopup;
+export default Index;

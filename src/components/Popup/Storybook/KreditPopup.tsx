@@ -2,20 +2,20 @@ import React from "react";
 import XButton from "../XButton";
 import Message from "../Message";
 import InfoMessage from "../InfoMessage";
-import PopupButton from "../PopupButton";
-import MainPopup from "../MainPopup";
+import Button from "../Button";
+import Index from "../Index";
 
 const KreditPopup = () => (
-  <MainPopup>
+  <Index>
     <div>
       <XButton />
       <Message text="Ooops…" />
       <InfoMessage text="Na Vašom konte nemáte dostatok kreditov aby ste sa mohli prihlási’t na zvolenú arteterapiu." />
     </div>
     <div>
-      <PopupButton text="Nákup kreditov" backgroundColor="black" />
+      <Button text="Nákup kreditov" backgroundColor="black" />
     </div>
-  </MainPopup>
+  </Index>
 );
 
 export default KreditPopup;
