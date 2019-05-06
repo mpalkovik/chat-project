@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import Homepage from "../components/Homepage/Container";
+import LandingPage from "./Homepage/LandingPage";
 
 const Home: FC<RouteComponentProps> = () => (
   <div>
-    <Homepage />
+    <LandingPage />
   </div>
 );
 

@@ -10,15 +10,15 @@ import orangeOval from "../../static/svg/orangeOval.svg";
 import pinkOval from "../../static/svg/pinkOval.svg";
 import greenOval from "../../static/svg/greenOval.svg";
 
-const HomepageList = () => (
+const List = () => (
   <div className="flex flex-col items-center m-0 bg-white relative p-6 lg:m-12 text-center">
     <h1 className="font-gilbert text-2xl">Arteterapie</h1>
-    <h4 className="pt-6 pb-8 font-lato font-normal lg:w-3/4  ">
+    <div className="pt-6 pb-8 font-lato font-normal lg:w-3/4  ">
       Naše arteterapie sú vhodné pre deti, mládež ale aj dospelých so zdravotným
       znevýhodnením, problémami v učení, s poruchami správania alebo pre tých čo
       trpia traumami, stratami, smútkom, depresiou alebo vyhorením. Arteterapie
       vedia pomôcť tiež v medziľudských a rodinných vzťahoch.
-    </h4>
+    </div>
     <div className="flex flex-col relative w-full lg:flex-row justify-center">
       <Icon
         src={smallChildrenIcon}
@@ -45,4 +45,4 @@ const HomepageList = () => (
     </div>
   </div>
 );
-export default HomepageList;
+export default List;

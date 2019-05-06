@@ -19,9 +19,9 @@ const Icon: FC<IProps> = ({ src, url, title, to }) => (
     <Oval url={url}>
       <img src={src} />
     </Oval>
-    <h4 className="w-full font-lato font-bold text-center text-black pt-4">
+    <div className="w-full font-lato font-bold text-center text-black pt-4">
       {title}
-    </h4>
+    </div>
   </Link>
 );
 export default Icon;

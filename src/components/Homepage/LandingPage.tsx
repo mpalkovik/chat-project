@@ -12,7 +12,7 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `;
-const Container = () => (
+const LandingPage = () => (
   <BackgroundImage>
     <Logo />
     <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5 ">
@@ -44,4 +44,4 @@ const Container = () => (
     </div>
   </BackgroundImage>
 );
-export default Container;
+export default LandingPage;

@@ -1,14 +1,12 @@
 import { Router } from "@reach/router";
 import React from "react";
-import Homepage from "./components/Home";
-import Example from "./components/Example";
+import Home from "./components/Home";
 import Counter from "./components/Counter";
 
 export default () => {
   return (
     <Router>
-      <Homepage path="/" />
-      <Example path="foo" />
+      <Home path="/" />
       <Counter path="counter" />
     </Router>
   );
