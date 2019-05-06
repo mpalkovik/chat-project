@@ -770,7 +770,7 @@ module.exports = {
     borderStyle: ["responsive", "hover"],
     borderWidths: ["responsive", "hover"],
     cursor: ["responsive"],
-    display: ["responsive", "hover"],
+    display: ["responsive"],
     flexbox: ["responsive"],
     float: ["responsive"],
     fonts: ["responsive"],

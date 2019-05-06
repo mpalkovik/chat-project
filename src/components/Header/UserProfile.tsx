@@ -17,7 +17,7 @@ export const UserProfile = () => (
       </div>
       <UserInfo name="Feri Schwartzeneger" kredit={10} />
     </div>
-    <div className="absolute invisible group-hover:visible w-full">
+    <div className="absolute invisible group-hover:visible">
       <UserMenu />
     </div>
   </div>
