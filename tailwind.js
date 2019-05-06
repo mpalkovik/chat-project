@@ -113,9 +113,9 @@ module.exports = {
   */
 
   fonts: {
-    gilbert: ["Gilbert", "serif"],
+    "gilbert": ["Gilbert", "serif"],
     "gilbert-color": ["Gilbert Color", "serif"],
-    lato: ["Lato", "serif"],
+    "lato": ["Lato", "serif"],
     "lato-black": ["Lato Black", "serif"],
     "lato-italic": ["Lato Italic", "serif"],
     "lato-black-italic": ["Lato Black Italic", "serif"]
@@ -142,11 +142,11 @@ module.exports = {
   */
 
   textSizes: {
-    xs: "10px",
-    sm: "12px",
-    base: "16px",
-    lg: "18px",
-    xl: "21px",
+    "xs": "10px",
+    "sm": "12px",
+    "base": "16px",
+    "lg": "18px",
+    "xl": "21px",
     "2xl": "31px",
     "3xl": "37px",
     "4xl": "45px",
@@ -286,7 +286,7 @@ module.exports = {
   */
 
   borderWidths: {
-    default: "1px",
+    "default": "1px",
     "0": "0",
     "2": "2px",
     "4": "4px",
@@ -360,8 +360,8 @@ module.exports = {
   */
 
   width: {
-    auto: "auto",
-    px: "1px",
+    "auto": "auto",
+    "px": "1px",
     "1": "4px",
     "2": "8px",
     "3": "12px",
@@ -408,8 +408,8 @@ module.exports = {
   */
 
   height: {
-    auto: "auto",
-    px: "1px",
+    "auto": "auto",
+    "px": "1px",
     "1": "4px",
     "2": "8px",
     "3": "12px",
@@ -424,8 +424,8 @@ module.exports = {
     "24": "96px",
     "48": "192px",
     "64": "256px",
-    full: "100%",
-    screen: "100vh"
+    "full": "100%",
+    "screen": "100vh"
   },
 
   /*
@@ -445,7 +445,7 @@ module.exports = {
 
   minWidth: {
     "0": "0",
-    full: "100%"
+    "full": "100%"
   },
 
   /*
@@ -465,8 +465,8 @@ module.exports = {
 
   minHeight: {
     "0": "0",
-    full: "100%",
-    screen: "100vh"
+    "full": "100%",
+    "screen": "100vh"
   },
 
   /*
@@ -486,16 +486,16 @@ module.exports = {
   */
 
   maxWidth: {
-    xs: "320px",
-    sm: "480px",
-    md: "640px",
-    lg: "800px",
-    xl: "960px",
+    "xs": "320px",
+    "sm": "480px",
+    "md": "640px",
+    "lg": "800px",
+    "xl": "960px",
     "2xl": "1120px",
     "3xl": "1280px",
     "4xl": "1440px",
     "5xl": "1600px",
-    full: "100%"
+    "full": "100%"
   },
 
   /*
@@ -535,7 +535,7 @@ module.exports = {
   */
 
   padding: {
-    px: "1px",
+    "px": "1px",
     "0": "0",
     "1": "4px",
     "2": "8px",
@@ -569,8 +569,8 @@ module.exports = {
   */
 
   margin: {
-    auto: "auto",
-    px: "1px",
+    "auto": "auto",
+    "px": "1px",
     "0": "0",
     "1": "4px",
     "2": "8px",
@@ -604,7 +604,7 @@ module.exports = {
   */
 
   negativeMargin: {
-    px: "1px",
+    "px": "1px",
     "0": "0",
     "1": "4px",
     "2": "8px",
