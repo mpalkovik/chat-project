@@ -5,7 +5,7 @@ import "./style/index.css";
 import "./style/fonts.css";
 import "./style/reset.css";
 import Router from "./Router";
-import configureStore from "./store";
+import { configureStore } from "./store";
 
 const store = configureStore();
 

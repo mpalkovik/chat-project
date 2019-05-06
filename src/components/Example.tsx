@@ -17,7 +17,7 @@ const Gilbert = styled.div`
   font-style: normal;
 `;
 
-const Example: FC<RouteComponentProps> = () => (
+export const Example: FC<RouteComponentProps> = () => (
   <div>
     <GilbertColor>
       CHAT ponúka individuálne arteterapie pre deti, dospelých a rodiny.
@@ -29,5 +29,3 @@ const Example: FC<RouteComponentProps> = () => (
     <img src={test} alt="svg" />
   </div>
 );
-
-export default Example;
