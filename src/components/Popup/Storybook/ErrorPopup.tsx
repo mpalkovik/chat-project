@@ -1,5 +1,5 @@
 import React from "react";
-import XButton from "../XButton";
+import XButton from "../CloseButton";
 import Message from "../Message";
 import InfoMessage from "../InfoMessage";
 import Button from "../Button";

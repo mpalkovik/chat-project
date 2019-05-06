@@ -1,6 +1,6 @@
 import React from "react";
 
-const XButton = () => (
+const CloseButton = () => (
   <div className="flex justify-end ">
     <button className=" bg-black font-bold w-10 h-10 rounded-lg mr-4 ">
       <div className="text-white">X</div>
@@ -8,4 +8,4 @@ const XButton = () => (
   </div>
 );
 
-export default XButton;
+export default CloseButton;

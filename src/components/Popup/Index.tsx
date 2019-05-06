@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const Index: FC = props => (
+const Index: FC = ({ children }) => (
   <div
     style={{
       width: "343px",
@@ -8,7 +8,7 @@ const Index: FC = props => (
     }}
     className="pt-4 pb-6 border-black border m-auto flex flex-col justify-between"
   >
-    {props.children}
+    {children}
   </div>
 );
 
