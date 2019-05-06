@@ -5,7 +5,7 @@ import InfoMessage from "../InfoMessage";
 import Button from "../Button";
 import Index from "../Index";
 
-const KreditPopup = () => (
+const CreditPopup = () => (
   <Index>
     <div>
       <XButton />
@@ -18,4 +18,4 @@ const KreditPopup = () => (
   </Index>
 );
 
-export default KreditPopup;
+export default CreditPopup;
