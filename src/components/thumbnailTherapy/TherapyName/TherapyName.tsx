@@ -6,7 +6,7 @@ interface IName {
 
 const TherapyName: FC<IName> = ({ text }) => {
   return (
-    <p className="font-Gilbert font-bold roman text-xl text-black leading-1.33 ">
+    <p className="font-Gilbert font-bold roman text-xl text-black leading-1.33">
       {text}
     </p>
   );
