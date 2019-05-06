@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
-import Logo from "./Logo";
-import ICO from "./Info";
-import Icon from "../Icon";
-import Contacts from "./Contacts";
-import Location from "./Location";
+import { Logo } from "./Logo";
+import { Info } from "./Info";
+import { Icon } from "../Icon";
+import { Contacts } from "./Contacts";
+import { Location } from "./Location";
 import Instagram from "../../static/svg/instagram.svg";
 import Facebook from "../../static/svg/facebook-square.svg";
 
@@ -16,7 +16,7 @@ const OverflowOvals = styled.div`
   right: 0px;
 `;
 
-const Footer: FC = () => (
+export const Footer: FC = () => (
   <div className=" flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
     <div className="flex lg:social-icons social-icons items-center justify-end">
       <div className="w-12 mr-1">
@@ -34,7 +34,7 @@ const Footer: FC = () => (
       <Logo />
       <div className="lg:flex">
         <div className="pb-6 pr-8">
-          <ICO />
+          <Info />
         </div>
         <div className="flex pt-6 pb-12 ">
           <Location />
@@ -47,5 +47,3 @@ const Footer: FC = () => (
     </OverflowOvals>
   </div>
 );
-
-export default Footer;

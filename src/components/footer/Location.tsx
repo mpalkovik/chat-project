@@ -1,9 +1,8 @@
 import React from "react";
-import styled from "@emotion/styled";
-import Icon from "../Icon";
+import { Icon } from "../Icon";
 import Place from "../../static/svg/icon-place.svg";
 
-const Location = () => (
+export const Location = () => (
   <div className="ml-6 mr-4 lg:pr-12 lg:pl-8 w-1/2 ">
     <div className="flex w-48 justify-start items-center">
       <div className="mr-3 w-6 flex items-start h-10 ">
@@ -17,5 +16,3 @@ const Location = () => (
     </div>
   </div>
 );
-
-export default Location;

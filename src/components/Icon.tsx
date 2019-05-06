@@ -3,6 +3,6 @@ interface IProps {
   src: string;
 }
 
-const Icon: FC<IProps> = props => <img src={props.src} className="w-full" />;
-
-export default Icon;
+export const Icon: FC<IProps> = ({ src }) => (
+  <img src={src} className="w-full" />
+);

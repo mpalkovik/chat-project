@@ -1,6 +1,6 @@
 import React from "react";
 
-const Info = () => (
+export const Info = () => (
   <div className="pt-5 pl-6 w-64 h-10">
     <div className="text-xs font-lato font-black">
       OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou
@@ -11,5 +11,3 @@ const Info = () => (
     </div>
   </div>
 );
-
-export default Info;
