@@ -6,11 +6,4 @@ import "../style/fonts.css";
 import { Header } from "../components/Header/Header";
 
 storiesOf("Example", module).add("example", () => <Example />);
-
-storiesOf("Header", module).add("desktop version", () => <Header />);
-
-storiesOf("Header", module).add("notebook version", () => <Header />);
-
-storiesOf("Header", module).add("tablet version", () => <Header />);
-
-storiesOf("Header", module).add("mobile version", () => <Header />);
+storiesOf("Header", module).add("header", () => <Header />);
