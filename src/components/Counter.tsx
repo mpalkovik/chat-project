@@ -33,7 +33,7 @@ const mapDispatchToProps = {
   decrementAction
 };
 
-export default connect(
+export const CounterContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
