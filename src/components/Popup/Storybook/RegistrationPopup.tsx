@@ -1,15 +1,15 @@
 import React from "react";
-import XButton from "../CloseButton";
-import Message from "../Message";
-import InfoMessage from "../InfoMessage";
-import Button from "../Button";
-import TextUnderButton from "../TextUnderButton";
-import Index from "../Index";
+import { CloseButton } from "../CloseButton";
+import { Message } from "../Message";
+import { InfoMessage } from "../InfoMessage";
+import { Button } from "../Button";
+import { TextUnderButton } from "../TextUnderButton";
+import { Index } from "../Index";
 
-const RegistrationPopup = () => (
+export const RegistrationPopup = () => (
   <Index>
     <div>
-      <XButton />
+      <CloseButton />
       <Message text="Záväzná registrácia" />
       <InfoMessage text="BABY CHAT - 15:30, 28.január 2019" />
     </div>
@@ -22,5 +22,3 @@ a kredity Vám budú vrátené."
     </div>
   </Index>
 );
-
-export default RegistrationPopup;

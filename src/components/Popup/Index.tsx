@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const Index: FC = ({ children }) => (
+export const Index: FC = ({ children }) => (
   <div
     style={{
       width: "343px",
@@ -11,5 +11,3 @@ const Index: FC = ({ children }) => (
     {children}
   </div>
 );
-
-export default Index;

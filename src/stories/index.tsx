@@ -1,9 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import CreditPopup from "../components/Popup/Storybook/CreditPopup";
-import ErrorPopup from "../components/Popup/Storybook/ErrorPopup";
-import RegistrationPopup from "../components/Popup/Storybook/RegistrationPopup";
-import CancelReservationPopup from "../components/Popup/Storybook/CancelReservationPopup";
+import { CreditPopup } from "../components/Popup/Storybook/CreditPopup";
+import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
+import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
+import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import "../style/index.css";
 import "../style/fonts.css";
 

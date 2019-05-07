@@ -1,14 +1,14 @@
 import React from "react";
-import XButton from "../CloseButton";
-import Message from "../Message";
-import InfoMessage from "../InfoMessage";
-import Button from "../Button";
-import Index from "../Index";
+import { CloseButton } from "../CloseButton";
+import { Message } from "../Message";
+import { InfoMessage } from "../InfoMessage";
+import { Button } from "../Button";
+import { Index } from "../Index";
 
-const CreditPopup = () => (
+export const CreditPopup = () => (
   <Index>
     <div>
-      <XButton />
+      <CloseButton />
       <Message text="Ooops…" />
       <InfoMessage text="Na Vašom konte nemáte dostatok kreditov aby ste sa mohli prihlási’t na zvolenú arteterapiu." />
     </div>
@@ -17,5 +17,3 @@ const CreditPopup = () => (
     </div>
   </Index>
 );
-
-export default CreditPopup;
