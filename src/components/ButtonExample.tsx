@@ -25,10 +25,11 @@ const Text = styled.span`
   color: ${colors.white};
 `;
 
-const ButtonExample: FC<IProps> = ({ text, backgroundColor = "black" }) => (
+export const ButtonExample: FC<IProps> = ({
+  text,
+  backgroundColor = "black"
+}) => (
   <ButtonStyle color={colors[backgroundColor]}>
     <Text>{text}</Text>
   </ButtonStyle>
 );
-
-export default ButtonExample;

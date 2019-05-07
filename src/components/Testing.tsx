@@ -1,14 +1,14 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
 import { RouteComponentProps } from "@reach/router";
-import ButtonExample from "./ButtonExample";
+import { ButtonExample } from "./ButtonExample";
 
 const Wrapper = styled.div`
   width: 295px;
   margin: 0 auto;
 `;
 
-const Testing: FC<RouteComponentProps> = () => (
+export const Testing: FC<RouteComponentProps> = () => (
   <div>
     <Wrapper>
       <ButtonExample text="Nákup kreditov" backgroundColor="black" />
@@ -20,5 +20,3 @@ const Testing: FC<RouteComponentProps> = () => (
     </Wrapper>
   </div>
 );
-
-export default Testing;

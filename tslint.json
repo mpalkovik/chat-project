@@ -10,6 +10,7 @@
     "object-literal-sort-keys": false,
     "no-shadowed-variable": false,
     "jsx-no-lambda": false,
-    "prettier": true
+    "prettier": true,
+    "no-default-export": true
   }
 }

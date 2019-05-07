@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import Icon from "./Icon";
+import { Button } from "./Button";
+import { Icon } from "./Icon";
 import smallChildrenIcon from "../../static/svg/icon-therapy-type-deti-do-3-rokov.svg";
 import childrenIcon from "../../static/svg/icon-therapy-type-deti-4-15.svg";
 import adultIcon from "../../static/svg/icon-therapy-type-pre-dospelych.svg";
@@ -10,7 +10,7 @@ import orangeOval from "../../static/svg/orangeOval.svg";
 import pinkOval from "../../static/svg/pinkOval.svg";
 import greenOval from "../../static/svg/greenOval.svg";
 
-const List = () => (
+export const List = () => (
   <div className="flex flex-col items-center m-0 bg-white relative p-6 lg:m-12 text-center">
     <h1 className="font-gilbert text-2xl">Arteterapie</h1>
     <div className="pt-6 pb-8 font-lato font-normal lg:w-3/4  ">
@@ -45,4 +45,3 @@ const List = () => (
     </div>
   </div>
 );
-export default List;

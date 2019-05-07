@@ -1,8 +1,8 @@
 import React from "react";
-import HomepageList from "./List";
-import Button from "./Button";
-import Description from "./Description";
-import Logo from "./Logo";
+import { List } from "./List";
+import { Button } from "./Button";
+import { Description } from "./Description";
+import { Logo } from "./Logo";
 import styled from "@emotion/styled";
 import background from "../../static/svg/group-13.svg";
 
@@ -12,7 +12,7 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `;
-const LandingPage = () => (
+export const LandingPage = () => (
   <BackgroundImage>
     <Logo />
     <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5 ">
@@ -31,7 +31,7 @@ const LandingPage = () => (
         digitálneho umenia."
       />
     </div>
-    <HomepageList />
+    <List />
     <div className="w-5/6 m-auto text-center pt-24 pb-24 lg:w-3/5">
       <Description
         text="Vyskúšajte si CHAT.
@@ -44,4 +44,3 @@ const LandingPage = () => (
     </div>
   </BackgroundImage>
 );
-export default LandingPage;

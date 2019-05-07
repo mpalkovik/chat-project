@@ -14,7 +14,7 @@ const Oval: any = styled.span`
   background-position: center;
   background-repeat: no-repeat;
 `;
-const Icon: FC<IProps> = ({ src, url, title, to }) => (
+export const Icon: FC<IProps> = ({ src, url, title, to }) => (
   <Link className="p-6 no-underline m-1" to={to}>
     <Oval url={url}>
       <img src={src} />
@@ -24,4 +24,3 @@ const Icon: FC<IProps> = ({ src, url, title, to }) => (
     </div>
   </Link>
 );
-export default Icon;
