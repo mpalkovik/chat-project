@@ -9,6 +9,7 @@ import "../style/index.css";
 import "../style/fonts.css";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
+import { Footer } from "../components/footer";
 
 storiesOf("Buttons", module).add("Button primary", () => (
   <Button inverted={true} text="Button Primary" color={true} />
@@ -20,6 +21,8 @@ storiesOf("Buttons", module).add("Close", () => (
   <Button inverted={false} text="X" size={true} />
 ));
 storiesOf("Input", module).add("normal", () => <Input name="Email" />);
+
+storiesOf("Footer", module).add("footer", () => <Footer />);
 storiesOf("Popups", module)
   .add("CreditPopup", () => <CreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
