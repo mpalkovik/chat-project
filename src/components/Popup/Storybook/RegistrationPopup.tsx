@@ -4,10 +4,10 @@ import { Message } from "../Message";
 import { InfoMessage } from "../InfoMessage";
 import { Button } from "../Button";
 import { TextUnderButton } from "../TextUnderButton";
-import { Index } from "../Index";
+import { Popup } from "../Popup";
 
 export const RegistrationPopup = () => (
-  <Index>
+  <Popup>
     <div>
       <CloseButton />
       <Message text="Záväzná registrácia" />
@@ -20,5 +20,5 @@ export const RegistrationPopup = () => (
 a kredity Vám budú vrátené."
       />
     </div>
-  </Index>
+  </Popup>
 );

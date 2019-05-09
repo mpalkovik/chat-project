@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-export const Index: FC = ({ children }) => (
+export const Popup: FC = ({ children }) => (
   <div
     style={{
       width: "343px",

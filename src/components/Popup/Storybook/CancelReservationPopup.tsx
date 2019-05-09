@@ -4,10 +4,10 @@ import { Message } from "../Message";
 import { InfoMessage } from "../InfoMessage";
 import { Button } from "../Button";
 import { TextUnderButton } from "../TextUnderButton";
-import { Index } from "../Index";
+import { Popup } from "../Popup";
 
 export const CancelReservationPopup = () => (
-  <Index>
+  <Popup>
     <div>
       <CloseButton />
       <Message text="Chystáte sa zrušiť rezerváciu" />
@@ -20,5 +20,5 @@ export const CancelReservationPopup = () => (
 a kredity Vám budú vrátené."
       />
     </div>
-  </Index>
+  </Popup>
 );

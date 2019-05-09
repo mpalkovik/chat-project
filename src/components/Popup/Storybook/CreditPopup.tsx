@@ -3,10 +3,10 @@ import { CloseButton } from "../CloseButton";
 import { Message } from "../Message";
 import { InfoMessage } from "../InfoMessage";
 import { Button } from "../Button";
-import { Index } from "../Index";
+import { Popup } from "../Popup";
 
 export const CreditPopup = () => (
-  <Index>
+  <Popup>
     <div>
       <CloseButton />
       <Message text="Ooops…" />
@@ -15,5 +15,5 @@ export const CreditPopup = () => (
     <div>
       <Button text="Nákup kreditov" backgroundColor="black" />
     </div>
-  </Index>
+  </Popup>
 );
