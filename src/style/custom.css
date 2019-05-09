@@ -1,3 +1,7 @@
 .link {
   @apply font-gilbert no-underline inline-block font-bold text-base text-black;
 }
+
+.userProfileLinks {
+  @apply font-lato no-underline text-black text-sm;
+}

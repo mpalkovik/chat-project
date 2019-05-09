@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 interface IProps {
   inverted?: boolean;
-  text?: string;
+  text: string;
   color?: boolean;
   size?: boolean;
 }
