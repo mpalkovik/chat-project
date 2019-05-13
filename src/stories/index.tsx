@@ -12,13 +12,13 @@ import { Input } from "../components/Input";
 import { Footer } from "../components/footer";
 
 storiesOf("Buttons", module).add("Button primary", () => (
-  <Button inverted={true} text="Button Primary" color={true} />
+  <Button inverted={true} text="Button Primary" isColorWhite={true} />
 ));
 storiesOf("Buttons", module).add("Button secondary", () => (
-  <Button inverted={false} text="Button Secondary" />
+  <Button text="Button Secondary" />
 ));
 storiesOf("Buttons", module).add("Close", () => (
-  <Button inverted={false} text="X" size={true} />
+  <Button text="X" size={true} />
 ));
 storiesOf("Input", module).add("normal", () => <Input name="Email" />);
 

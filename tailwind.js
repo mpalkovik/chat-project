@@ -149,11 +149,11 @@ module.exports = {
   */
 
   textSizes: {
-    "xs": "10px",
-    "sm": "12px",
-    "base": "16px",
-    "lg": "18px",
-    "xl": "21px",
+    xs: "10px",
+    sm: "12px",
+    base: "16px",
+    lg: "18px",
+    xl: "21px",
     "2xl": "31px",
     "3xl": "37px",
     "4xl": "45px",
@@ -293,7 +293,7 @@ module.exports = {
   */
 
   borderWidths: {
-    "default": "1px",
+    default: "1px",
     "0": "0",
     "2": "2px",
     "4": "4px",
@@ -342,6 +342,7 @@ module.exports = {
     sm: "2px",
     default: "4px",
     lg: "8px",
+    xl: "12px",
     full: "9999px"
   },
 
