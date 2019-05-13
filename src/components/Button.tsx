@@ -1,24 +1,28 @@
 import React, { FC } from "react";
 
 interface IProps {
-  inverted?: boolean;
+  isInverted?: boolean;
   text: string;
   isColorWhite?: boolean;
-  size?: boolean;
+  isBig?: boolean;
 }
 
+const outlineNone = {
+  outline: 0
+};
+
 export const Button: FC<IProps> = ({
-  inverted = false,
+  isInverted = false,
   text,
   isColorWhite = false,
-  size = false
+  isBig = false
 }) => (
   <button
-    className={`mt-1 h-10 w-${size ? "10" : "48"} text-${
+    style={outlineNone}
+    className={`w-${isBig ? "10" : "48"} text-${
       isColorWhite ? "white" : "black"
-    } font-lato text-base hover:shadow-lg hover:bg-dark-black active:opacity-50 mr-20 font-bold bg-${
-      inverted ? "black" : "white"
-    } border-solid border-2 border-black rounded-xl`}
+    } bg-${isInverted ? "black" : "white"} 
+    outline-none mt-1 h-10 font-lato text-base hover:shadow-lg hover:bg-dark-black active:opacity-50 mr-20 font-bold  border-solid border border-black rounded-xl`}
   >
     {text}
   </button>
