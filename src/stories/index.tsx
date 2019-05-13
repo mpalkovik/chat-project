@@ -18,7 +18,7 @@ storiesOf("Buttons", module).add("Button secondary", () => (
   <Button text="Button Secondary" />
 ));
 storiesOf("Buttons", module).add("Close", () => (
-  <Button text="X" isBig={true} />
+  <Button text="X" isSmall={true} />
 ));
 storiesOf("Input", module).add("normal", () => <Input name="Email" />);
 
