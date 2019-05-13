@@ -45,7 +45,6 @@ let defaultConfig = require("tailwindcss/defaultConfig")();
 
 let colors = {
   transparent: "transparent",
-
   black: "#333333",
   blue: "#00b5e2",
   green: "#00c65e",
@@ -57,6 +56,7 @@ let colors = {
   white: "#ffffff"
 };
 
+// prettier-ignore
 module.exports = {
   /*
   |-----------------------------------------------------------------------------
