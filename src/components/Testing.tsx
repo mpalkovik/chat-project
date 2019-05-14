@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import { Mapping } from "./ArticlePage/Mapping";
+import { Article } from "./ArticlePage/Articles";
 
 export const Testing: FC<RouteComponentProps> = () => (
   <div>
-    <Mapping />
+    <Article />
   </div>
 );

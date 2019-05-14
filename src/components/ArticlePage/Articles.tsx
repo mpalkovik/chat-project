@@ -18,13 +18,13 @@ const article = [
 ];
 const BackgroundImage = styled.div`
   background-image: url(${background});
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 `;
-export const Mapping = () => (
+export const Article = () => (
   <BackgroundImage>
     <div className="p-6">
       {article.map(({ src, date, title, subtitle, paragraph }) => (
