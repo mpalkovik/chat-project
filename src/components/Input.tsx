@@ -6,7 +6,7 @@ interface IProps {
 
 export const Input: FC<IProps> = ({ name }) => (
   <div>
-    <p className="text-sm text-grey font-lato mb-2 mt-3">{name}</p>
+    <label className="text-sm text-grey font-lato mb-2 mt-3">{name}</label>
     <input
       type="text"
       placeholder="Zadajte Váš email"
