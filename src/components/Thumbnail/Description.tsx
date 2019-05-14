@@ -5,5 +5,5 @@ export interface IProps {
 }
 
 export const Description: FC<IProps> = ({ text }) => (
-  <p className="text-sm leading-normal font-lato font-normal mb-4">{text}</p>
+  <p className="text-sm leading-normal font-lato mb-4">{text}</p>
 );

@@ -16,8 +16,16 @@ import "../style/index.css";
 import "../style/fonts.css";
 
 storiesOf("ThumbnailTherapy", module)
-  .add("Therapy", () => <Thumbnail />)
-  .add("Image", () => <Image icon={icon} />)
+  .add("Therapy", () => (
+    <Thumbnail
+      name="MAMA CHAT"
+      icon={icon}
+      alt="super"
+      description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+      button="Zistiť viac"
+    />
+  ))
+  .add("Image", () => <Image icon={icon} alt="super" />)
   .add("Name", () => <Name text="MAMA CHAT" />)
   .add("Description", () => (
     <Description text="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]" />

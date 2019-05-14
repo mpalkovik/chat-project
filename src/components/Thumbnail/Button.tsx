@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export const Button: FC<IProps> = ({ text }) => (
-  <button className="rounded-lg bg-transparent w-full h-10 font-black font-lato text-black hover:text-white hover:bg-black text-black font-black">
+  <button className="rounded-lg w-full h-10 font-black font-lato hover:text-white hover:bg-black text-black">
     {text}
   </button>
 );
