@@ -6,7 +6,7 @@ import { Expanded } from "./Expanded";
 export const Filter: FC<RouteComponentProps> = () => {
   return (
     <div className="w-1/3">
-      <Button text="Všetky CHAT arteterapie" />
+      <Button />
       <Expanded />
     </div>
   );

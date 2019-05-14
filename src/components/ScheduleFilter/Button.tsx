@@ -1,13 +1,15 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
-interface IProps {
-  text: string;
-}
+export const Button: FC = () => {
+  const [text, setText] = useState("Všetky CHAT arteterapie");
 
-export const Button: FC<IProps> = ({ text }) => {
+  function handleTextChange() {
+    setText("Filter");
+  }
+
   return (
     <button>
-      <ul>{text}</ul>
+      <ul onClick={handleTextChange}>{text}</ul>
     </button>
   );
 };
