@@ -7,7 +7,9 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header/Header";
 import "../style/index.css";
 import "../style/fonts.css";
+import { Footer } from "../components/footer";
 
+storiesOf("Footer", module).add("footer", () => <Footer />);
 storiesOf("Popups", module)
   .add("CreditPopup", () => <CreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
