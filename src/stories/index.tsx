@@ -5,6 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
+import { Schedule } from "../components/Schedule/Schedule";
 import "../style/index.css";
 import "../style/fonts.css";
 import { Footer } from "../components/footer";
@@ -16,3 +17,4 @@ storiesOf("Popups", module)
   .add("CancelReservation", () => <CancelReservationPopup />)
   .add("ErrorPopup", () => <ErrorPopup />);
 storiesOf("Header", module).add("Header", () => <Header />);
+storiesOf("Schedule", module).add("Schedule", () => <Schedule />);
