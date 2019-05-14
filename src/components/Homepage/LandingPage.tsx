@@ -39,7 +39,10 @@ export const LandingPage = () => (
         prvú hodinu zdarma."
       />
       <div className="w-48 m-auto mt-6 bg-black rounded-lg">
-        <Button text="Registrovať sa" className="font-lato font-bold text-white" />
+        <Button
+          text="Registrovať sa"
+          className="font-lato font-bold text-white"
+        />
       </div>
     </div>
   </BackgroundImage>
