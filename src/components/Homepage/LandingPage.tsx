@@ -4,7 +4,7 @@ import { Button } from "./Button";
 import { Description } from "./Description";
 import { Logo } from "./Logo";
 import styled from "@emotion/styled";
-import background from "../../static/svg/group-13.svg";
+import background from "../../static/svg/backgroundImage.svg";
 
 const BackgroundImage = styled.div`
   background-image: url(${background});
@@ -38,8 +38,8 @@ export const LandingPage = () => (
         Registrujte sa a získajte
         prvú hodinu zdarma."
       />
-      <div className="w-48 m-auto mt-6 bg-black text-white font-black rounded-lg">
-        <Button text="Registrovať sa" />
+      <div className="w-48 m-auto mt-6 bg-black rounded-lg">
+        <Button text="Registrovať sa" className="font-lato font-bold text-white" />
       </div>
     </div>
   </BackgroundImage>

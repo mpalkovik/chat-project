@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export const Description: FC<IProps> = ({ text }) => (
-  <h1 className="p-1 0 inline m-0 font-gilbert text-4xl bg-white">
-    <strong className="relative">{text}</strong>
+  <h1 className="p-1 0 m-0 font-gilbert text-4xl">
+    <span className="bg-white inline">{text}</span>
   </h1>
 );

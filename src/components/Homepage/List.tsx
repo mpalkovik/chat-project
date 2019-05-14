@@ -4,7 +4,7 @@ import { Icon } from "./Icon";
 import smallChildrenIcon from "../../static/svg/icon-therapy-type-deti-do-3-rokov.svg";
 import childrenIcon from "../../static/svg/icon-therapy-type-deti-4-15.svg";
 import adultIcon from "../../static/svg/icon-therapy-type-pre-dospelych.svg";
-import individualIcon from "../../static/svg/icon-therapy-type-pre-dospelych-copy.svg";
+import individualIcon from "../../static/svg/icon-therapy-type-pre-dospeleho.svg";
 import blueOval from "../../static/svg/blueOval.svg";
 import orangeOval from "../../static/svg/orangeOval.svg";
 import pinkOval from "../../static/svg/pinkOval.svg";
@@ -40,8 +40,8 @@ export const List = () => (
         url={greenOval}
       />
     </div>
-    <div className="w-64 mt-5 border border-solid rounded-lg bg-white text-black font-black">
-      <Button text="Všetky naše arteterapie" />
+    <div className="w-64 mt-5 border border-solid rounded-lg bg-white">
+      <Button text="Všetky naše arteterapie" className="font-lato font-bold text-black" />
     </div>
   </div>
 );
