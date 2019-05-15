@@ -8,7 +8,7 @@ interface IProps {
   source: string;
   text: string;
 }
-export const Layout: FC<IProps> = ({
+export const Article: FC<IProps> = ({
   date,
   title,
   subtitle,
