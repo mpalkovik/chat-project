@@ -18,7 +18,9 @@ storiesOf("Buttons", module).add("Button secondary", () => (
   <Button text="Button Secondary" />
 ));
 storiesOf("Buttons", module).add("Close", () => <Button text="X" />);
-storiesOf("Input", module).add("normal", () => <Input name="Email" />);
+storiesOf("Input", module).add("normal", () => (
+  <Input name="Email" placeholder="Zadajte Váš email" />
+));
 
 storiesOf("Footer", module).add("footer", () => <Footer />);
 storiesOf("Popups", module)
