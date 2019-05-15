@@ -30,7 +30,7 @@ export const LandingPageWrapper = () => (
         Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
       </Description>
       <div className="w-48 m-auto mt-6 bg-black rounded-lg">
-        <Button className="text-white font-lato font-bold">
+        <Button>
           Registrovať sa
         </Button>
       </div>
