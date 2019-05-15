@@ -20,8 +20,14 @@
        width: 293px;
        height: 409px;
        right: 0;
-       top: 30px;
+       top: 20px;
     } 
+    .sm\:bg-oval{
+       background-image: url('../static/svg/ovals.svg');
+       width: 251px;
+       height: 301px;
+       top: 20px;
+    }
      .lg\:bg-oval {
        background-image: url('../static/svg/ovals.svg');
        width: 211px;
@@ -33,11 +39,15 @@
       right: 0;
       z-index: 1;
       padding-right: 64px;
-      padding-bottom: 128px;
+      padding-bottom: 230px;
+    }
+    .sm\:social-icons{
+      padding-right: 64px;
+      padding-bottom: 230px;
     }
     .lg\:social-icons{
       padding-right: 40px;
-      padding-bottom: 230px;
+      padding-bottom: 315px;
     }
 
    }
