@@ -1,9 +1,5 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 
-interface IProps {
-  children: ReactNode;
-}
-
-export const Name: FC<IProps> = ({ children }) => (
+export const Name: FC = ({ children }) => (
   <p className="font-gilbert text-xl text-black">{children}</p>
 );

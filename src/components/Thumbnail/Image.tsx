@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import classnames from "classnames";
+
 interface IProps {
   icon: string;
   alt: string;
