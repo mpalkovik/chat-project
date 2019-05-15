@@ -1,11 +1,13 @@
 import React, { FC } from "react";
 
 interface IProps {
-  text: string;
+  children: string;
 }
 
-export const Description: FC<IProps> = ({ text }) => (
-  <h1 className="p-1 m-0 font-gilbert text-4xl">
-    <span className="bg-white">{text}</span>
-  </h1>
+export const Description: FC<IProps> = ({ children }) => (
+  <div className="leading-tight">
+    <h1 className="font-gilbert text-4xl">
+      <span className="bg-white">{children}</span>
+    </h1>
+  </div>
 );

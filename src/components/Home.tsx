@@ -1,9 +1,5 @@
 import React, { FC } from "react";
 import { RouteComponentProps } from "@reach/router";
-import { LandingPage } from "./Homepage/LandingPage";
+import { LandingPageWrapper } from "./Homepage/LandingPageWrapper";
 
-export const Home: FC<RouteComponentProps> = () => (
-  <div>
-    <LandingPage />
-  </div>
-);
+export const Home: FC<RouteComponentProps> = () => <LandingPageWrapper />;

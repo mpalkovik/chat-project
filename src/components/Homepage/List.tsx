@@ -41,7 +41,9 @@ export const List = () => (
       />
     </div>
     <div className="w-64 mt-5 border border-solid rounded-lg bg-white">
-      <Button text="Všetky naše arteterapie" className="font-lato font-bold" />
+      <Button className="text-black font-lato font-bold">
+        Všetky naše arteterapie
+      </Button>
     </div>
   </div>
 );

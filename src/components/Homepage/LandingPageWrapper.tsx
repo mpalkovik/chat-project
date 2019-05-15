@@ -12,37 +12,27 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `;
-export const LandingPage = () => (
+export const LandingPageWrapper = () => (
   <BackgroundImage>
-    <Logo />
+    <div className="pt-4 pb-24">
+      <Logo />
+    </div>
     <div className="descriptionWrapper lg:w-3/5">
-      <Description
-        text="CHAT je unikátnym
-        medzinárodným
-        arteterapeutickým
-        centrom v Košiciach
-        pre deti, mládež
-        a dospelých,
-        ktoré sa zaoberá
-        liečbou umením
-        použitím nielen
-        tradičných foriem
-        umenia, ale aj
-        digitálneho umenia."
-      />
+      <Description>
+        CHAT je unikátnym medzinárodným arteterapeutickým centrom v Košiciach
+        pre deti, mládež a dospelých, ktoré sa zaoberá liečbou umením použitím
+        nielen tradičných foriem umenia, ale aj digitálneho umenia.
+      </Description>
     </div>
     <List />
     <div className="descriptionWrapper lg:w-3/5">
-      <Description
-        text="Vyskúšajte si CHAT.
-        Registrujte sa a získajte
-        prvú hodinu zdarma."
-      />
+      <Description>
+        Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
+      </Description>
       <div className="w-48 m-auto mt-6 bg-black rounded-lg">
-        <Button
-          text="Registrovať sa"
-          className="font-lato font-bold text-white"
-        />
+        <Button className="text-white font-lato font-bold">
+          Registrovať sa
+        </Button>
       </div>
     </div>
   </BackgroundImage>
