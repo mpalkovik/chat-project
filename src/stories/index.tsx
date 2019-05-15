@@ -5,7 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
-import icon from "../components/Thumbnail/homer.svg";
+import icon from "../static/svg/homer.svg";
 import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Image } from "../components/Thumbnail/Image";
 import { Name } from "../components/Thumbnail/Name";
