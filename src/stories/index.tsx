@@ -5,7 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
-import { Article } from "../components/ArticlePage/Articles";
+import { Article } from "../components/ArticlePage/Article";
 import "../style/index.css";
 import "../style/fonts.css";
 import { Footer } from "../components/footer";
