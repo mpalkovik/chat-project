@@ -6,6 +6,7 @@ interface IProps {
   alt: string;
   classname?: string;
 }
+
 export const Image: FC<IProps> = ({ icon, alt, classname = "" }) => (
   <img alt={alt} src={icon} className={classnames("w-full", classname)} />
 );
