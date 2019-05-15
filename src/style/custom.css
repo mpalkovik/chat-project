@@ -28,6 +28,7 @@
        height: 301px;
        top: 20px;
     }
+
      .lg\:bg-oval {
        background-image: url('../static/svg/ovals.svg');
        width: 211px;
