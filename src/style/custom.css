@@ -49,3 +49,7 @@
 .userProfileLinks {
   @apply font-lato no-underline text-black text-sm;
 }
+
+.descriptionWrapper {
+  @apply w-5/6 m-auto text-center pt-24 pb-24;
+}
