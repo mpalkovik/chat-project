@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import classnames from "classnames";
 
 export interface IProps {
   children: ReactNode;
@@ -6,5 +7,5 @@ export interface IProps {
 }
 
 export const Description: FC<IProps> = ({ children, classname = "" }) => (
-  <p className={`text-sm font-lato ${classname}`}>{children}</p>
+  <p className={classnames("text-sm font-lato", classname)}>{children}</p>
 );
