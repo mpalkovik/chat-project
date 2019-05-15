@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface IProps {
-  children: string;
+  children: ReactNode;
 }
 
 export const Name: FC<IProps> = ({ children }) => (
