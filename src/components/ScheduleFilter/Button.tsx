@@ -9,9 +9,9 @@ export const Button: FC = ({}) => {
 
   return (
     <div>
-      <p className="w-1/3" onClick={handleTextChange}>
+      <button className="w-full" onClick={handleTextChange}>
         {text}
-      </p>
+      </button>
     </div>
   );
 };
