@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 
 interface IProps {
-  text: string;
+  children: string;
 }
 
-export const Button: FC<IProps> = ({ text }) => (
+export const Button: FC<IProps> = ({ children }) => (
   <button className="rounded-lg w-full h-10 font-black font-lato hover:text-white hover:bg-black text-black">
-    {text}
+    {children}
   </button>
 );

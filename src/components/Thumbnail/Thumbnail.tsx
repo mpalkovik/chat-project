@@ -20,8 +20,8 @@ export const Thumbnail: FC<IProps> = ({
 }) => (
   <div className="p-2 w-1/5 shadow block">
     <Image icon={icon} alt={alt} classname="mb-2" />
-    <Name text={name} />
-    <Description text={description} classname="mb-4" />
-    <Button text={button} />
+    <Name children={name} />
+    <Description children={description} classname="mb-4" />
+    <Button children={button} />
   </div>
 );

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 
 interface IProps {
-  text: string;
+  children: string;
 }
 
-export const Name: FC<IProps> = ({ text }) => (
-  <p className="font-gilbert text-xl text-black">{text}</p>
+export const Name: FC<IProps> = ({ children }) => (
+  <p className="font-gilbert text-xl text-black">{children}</p>
 );
