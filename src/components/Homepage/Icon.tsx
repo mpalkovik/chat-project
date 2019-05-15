@@ -8,11 +8,13 @@ interface IProps {
   title: string;
   to: string;
 }
-const Oval: any = styled.span`
-  background-image: url(${(props: any) => props.url});
+interface IOval {
+  url: string;
+}
+const Oval = styled.div<IOval>`
+  background: url(${props => props.url}) no-repeat center;
   display: inline-block;
   background-position: center;
-  background-repeat: no-repeat;
 `;
 export const Icon: FC<IProps> = ({ src, url, title, to }) => (
   <Link className="p-6 no-underline m-1" to={to}>
