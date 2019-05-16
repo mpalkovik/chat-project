@@ -21,12 +21,12 @@ export const ReservationInfo: FC<IProps> = ({
 }) => (
   <div className="pt-4">
     <div className="flex flex-row">
-      <div className="ml-6 mt-1 w-10 h-6 font-gilbert">{time}</div>
+      <div className="text-xl ml-6 mt-1 font-gilbert">{time}</div>
       <div
         style={{ borderBottomWidth: "34px" }}
-        className="w-px border-solid border-lilac"
+        className="ml-2 w-px border-solid border-lilac"
       />
-      <div className="w-20 ml-2 mt-1 h-6 font-gilbert">{chatName}</div>
+      <div className="text-xl ml-2 mt-1 font-gilbert">{chatName}</div>
     </div>
     <div className="flex flex-row items-center">
       <div

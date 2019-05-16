@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 interface IProps {
   availability: string;
@@ -10,38 +10,40 @@ export const Reservation: FC<IProps> = ({
   availability,
   numbers,
   numberOfPlace
-}) => (
-  <div className="pt-5">
-    <div className="flex flex-row">
-      <div className="text-sm font-lato font-bold">{availability}</div>
-      <div
-        style={{ marginLeft: "215px" }}
-        className="text-sm font-lato font-bold"
-      >
-        {numbers}
+}) => {
+  const [counter, setCounter] = useState(1);
+  const increment = () => setCounter(counter + 1);
+  const decrement = () => setCounter(counter - 1);
+  return (
+    <div className="lg:pt-5 pt-3">
+      <div className="flex justify-between">
+        <div className="text-sm font-lato font-bold">{availability}</div>
+        <div className="flex content-end text-sm font-lato font-bold">
+          {numbers}
+        </div>
+      </div>
+      <div className="pt-2 border-b border-solid border-lilac" />
+      <div className="pt-4 text-sm font-lato font-bold">{numberOfPlace}</div>
+      <div className="pt-1 flex flex-row">
+        <button
+          onClick={decrement}
+          className="border-black border font-gilbert w-10 h-10 rounded-lg text-4xl"
+        >
+          <div>-</div>
+        </button>
+        <div className="ml-1 border-solid border-black border font-bold w-10 h-10 lg:w-20 rounded-lg text-base font-lato flex justify-center items-center">
+          {counter}
+        </div>
+        <button
+          onClick={increment}
+          className="ml-1 border-black border font-gilbert w-10 h-10 rounded-lg text-4xl"
+        >
+          <div>+</div>
+        </button>
+        <button className="ml-4 bg-black font-bold rounded-lg w-3/5">
+          <div className="text-white font-lato">Rezervovať</div>
+        </button>
       </div>
     </div>
-    <div
-      style={{ width: "310px" }}
-      className="pt-2 border-b border-solid border-lilac"
-    />
-    <div className="pt-6 text-sm font-lato font-bold">{numberOfPlace}</div>
-    <div className="pt-1 flex flex-row">
-      <button className="border-black border font-gilbert w-10 h-10 rounded-lg text-4xl">
-        <div>-</div>
-      </button>
-      <button className="ml-1 border-black border font-bold w-20 h-10 rounded-lg text-base font-lato">
-        1
-      </button>
-      <button className="ml-1 border-black border font-gilbert w-10 h-10 rounded-lg text-center text-4xl">
-        <div>+</div>
-      </button>
-      <button
-        style={{ width: "135px" }}
-        className="ml-4 bg-black font-bold h-10 rounded-lg "
-      >
-        <div className="text-white font-lato">Rezervovať</div>
-      </button>
-    </div>
-  </div>
-);
+  );
+};

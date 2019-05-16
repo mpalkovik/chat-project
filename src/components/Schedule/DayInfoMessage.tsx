@@ -6,12 +6,9 @@ interface IProps {
 
 export const DayInfoMessage: FC<IProps> = ({ text }) => (
   <div>
-    <div
-      style={{ width: "682px" }}
-      className="h-8 font-gilbert text-2xl font-bold ml-6 pb-4"
-    >
+    <div className="lg:text-2xl lg:mb-4 text-xl h-8 font-gilbert ml-6">
       {text}
     </div>
-    <div className="pt-4 border-b border-solid border-lilac" />
+    <div className="border-b border-solid border-lilac" />
   </div>
 );
