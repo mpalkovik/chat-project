@@ -5,7 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
-import { ArticleWrapper } from "../components/ArticlePage/ArticleWrapper";
+import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import "../style/index.css";
 import "../style/fonts.css";
 import { Footer } from "../components/footer";
@@ -17,4 +17,4 @@ storiesOf("Popups", module)
   .add("CancelReservation", () => <CancelReservationPopup />)
   .add("ErrorPopup", () => <ErrorPopup />);
 storiesOf("Header", module).add("Header", () => <Header />);
-storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleWrapper />);
+storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);

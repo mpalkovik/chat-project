@@ -13,7 +13,7 @@ const BackgroundImage = styled.div`
   width: 100%;
   height: 100%;
 `;
-export const ArticleWrapper = () => {
+export const ArticleContainer = () => {
   const [articleData] = useState({
     src: articleImage,
     date: "20.novembra 2018 12:45",
