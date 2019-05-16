@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "@reach/router";
 import styled from "@emotion/styled";
+import { BackgroundImage } from "./BackgroundImage";
 
 interface IProps {
   src: string;
@@ -8,17 +9,11 @@ interface IProps {
   title: string;
   to: string;
 }
-interface IOval {
-  url: string;
-}
-const Oval = styled.div<IOval>`
-  background: url(${props => props.url}) no-repeat center;
-`;
 export const Icon: FC<IProps> = ({ src, url, title, to }) => (
   <Link className="p-6 no-underline m-1" to={to}>
-    <Oval url={url}>
+    <BackgroundImage url={url}>
       <img src={src} />
-    </Oval>
+    </BackgroundImage>
     <div className="w-full font-lato font-bold text-center text-black pt-4">
       {title}
     </div>
