@@ -25,7 +25,7 @@ storiesOf("Input", module).add("normal", () => (
   <Input name="Email" placeholder="Zadajte Váš email" />
 ));
 
-storiesOf("Footer", module).add("footer", () => <Footer />);
+storiesOf("Footer", module).add("Footer", () => <Footer />);
 storiesOf("Popups", module)
   .add("CreditPopup", () => <CreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
