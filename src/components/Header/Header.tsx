@@ -14,7 +14,9 @@ export const Header = () => {
       {openMenu === true && (
         <div>
           <div className="flex justify-end mr-6 mt-4">
-            <ImageHeader src={times} onClick={() => setOpenMenu(false)} />
+            <div onClick={() => setOpenMenu(false)}>
+              <ImageHeader src={times} />
+            </div>
           </div>
           <HamburgerMenu />
           <div
