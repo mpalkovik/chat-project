@@ -5,17 +5,17 @@ import { ImageHeader } from "./ImageHeader";
 import { Navigation } from "./Navigation";
 import { UserProfile } from "./UserProfile";
 import { HamburgerMenu } from "./HamburgerMenu";
-import times from "../../static/svg/times.svg";
+import closeImg from "../../static/svg/closeImg.svg";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div>
-      {openMenu === true && (
+      {openMenu && (
         <div>
           <div className="flex justify-end mr-6 mt-4">
             <div onClick={() => setOpenMenu(false)}>
-              <ImageHeader src={times} />
+              <ImageHeader src={closeImg} />
             </div>
           </div>
           <HamburgerMenu />
