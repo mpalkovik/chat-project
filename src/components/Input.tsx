@@ -7,11 +7,11 @@ interface IProps {
 
 export const Input: FC<IProps> = ({ name, placeholder }) => (
   <div>
-    <label className="text-sm text-grey font-lato mb-2 mt-3">{name}</label>
+    <label className="text-xs text-grey font-lato mb-2 mt-3">{name}</label>
     <input
       type="text"
       placeholder={placeholder}
-      className="w-full h-10 font-lato text-base text-sm hover:shadow-lg pl-4 border-solid border border-black rounded-xl"
+      className="w-full h-10 font-lato text-sm hover:shadow-lg pl-4 border-solid border border-black rounded-xl"
     />
   </div>
 );

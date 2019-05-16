@@ -55,7 +55,7 @@ let colors = {
   purple: "#db3eb1",
   red: "#f93822",
   white: "#ffffff",
-  "dark-black": "1f1f1f"
+  "dark-black": "#1f1f1f"
 };
 
 module.exports = {
