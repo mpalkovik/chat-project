@@ -9,6 +9,11 @@ test("Convert date to text - today", () => {
     "Dnes - Štvrtok 16. máj"
   );
 });
+test("Convert date to text - today 1 sec to midnight", () => {
+  expect(getDateByTimeString("2019-05-16 23:59:59")).toEqual(
+    "Dnes - Štvrtok 16. máj"
+  );
+});
 test("Convert date to text - tommorow", () => {
   expect(getDateByTimeString("2019-05-17 00:00:00")).toEqual(
     "Zajtra - Piatok 17. máj"
