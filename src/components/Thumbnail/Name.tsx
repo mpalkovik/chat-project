@@ -1,5 +1,10 @@
 import React, { FC } from "react";
 
 export const Name: FC = ({ children }) => (
-  <p className="font-gilbert text-xl text-black">{children}</p>
+  <span
+    className="font-gilbert flex text-xl text-black w-full"
+    style={{ height: "28px" }}
+  >
+    {children}
+  </span>
 );

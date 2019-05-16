@@ -7,6 +7,11 @@ interface IProps {
   classname?: string;
 }
 
-export const Image: FC<IProps> = ({ icon, alt, classname = "" }) => (
-  <img alt={alt} src={icon} className={classnames("w-full", classname)} />
+export const Image: FC<IProps> = ({ icon, alt, classname }) => (
+  <img
+    alt={alt}
+    src={icon}
+    style={{ height: "160px" }}
+    className={classnames("w-full", classname)}
+  />
 );
