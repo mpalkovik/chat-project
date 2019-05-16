@@ -9,15 +9,22 @@ import "../style/index.css";
 import "../style/fonts.css";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 
 storiesOf("Buttons", module).add("Button primary", () => (
-  <Button isInverted={true}>Button Primary</Button>
+  <Button isInverted>Button Primary</Button>
+));
+storiesOf("Buttons", module).add("Button primary stretched", () => (
+  <Button isInverted stretched>
+    Button Primary
+  </Button>
 ));
 storiesOf("Buttons", module).add("Button secondary", () => (
   <Button>Button Secondary</Button>
 ));
-storiesOf("Buttons", module).add("Close", () => <Button>X</Button>);
+storiesOf("Buttons", module).add("Button secondary stretched", () => (
+  <Button stretched>Button Secondary</Button>
+));
 storiesOf("Input", module).add("normal", () => (
   <Input name="Email" placeholder="Zadajte Váš email" />
 ));
