@@ -54,7 +54,8 @@ let colors = {
   maize: "#ffc450",
   purple: "#db3eb1",
   red: "#f93822",
-  white: "#ffffff"
+  white: "#ffffff",
+  "dark-black": "#1f1f1f"
 };
 
 module.exports = {
@@ -341,6 +342,7 @@ module.exports = {
     sm: "2px",
     default: "4px",
     lg: "8px",
+    xl: "12px",
     full: "9999px"
   },
 
@@ -760,7 +762,7 @@ module.exports = {
   modules: {
     appearance: ["responsive"],
     backgroundAttachment: ["responsive"],
-    backgroundColors: ["responsive", "hover", "focus"],
+    backgroundColors: ["responsive", "hover", "focus", "active"],
     backgroundPosition: ["responsive"],
     backgroundRepeat: ["responsive"],
     backgroundSize: ["responsive"],
@@ -786,7 +788,7 @@ module.exports = {
     negativeMargin: ["responsive"],
     objectFit: false,
     objectPosition: false,
-    opacity: ["responsive"],
+    opacity: ["responsive", "active"],
     outline: ["focus"],
     overflow: ["responsive"],
     padding: ["responsive"],
