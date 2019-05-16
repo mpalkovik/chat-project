@@ -3,18 +3,24 @@ import classnames from "classnames";
 
 interface IProps {
   isInverted?: boolean;
+  stretched?: boolean;
 }
 
-export const Button: FC<IProps> = ({ isInverted = false, children }) => (
+export const Button: FC<IProps> = ({
+  isInverted = false,
+  children,
+  stretched = false
+}) => (
   <button
     className={classnames(
-      "mt-1 h-10 w-full font-lato text-base hover:shadow-lg active:opacity-50 mr-20 font-bold border-solid border border-black rounded-xl",
+      "h-10 font-lato text-base hover:shadow-lg active:opacity-50 font-bold border-solid border border-black rounded-xl",
       {
         [`${
           isInverted
             ? "bg-black text-white hover:bg-dark-black"
             : "bg-white text-black"
-        }`]: true
+        }`]: true,
+        [`${stretched ? "w-full" : "pr-8 pl-8"}`]: true
       }
     )}
   >
