@@ -9,7 +9,7 @@ import "../style/index.css";
 import "../style/fonts.css";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 
 storiesOf("Buttons", module).add("Button primary", () => (
   <Button isInverted={true}>Button Primary</Button>
