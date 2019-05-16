@@ -14,7 +14,11 @@ test("Convert date to text - tommorow", () => {
     "Zajtra - Piatok 17. máj"
   );
 });
-
+test("Convert date to text - tommorow 1 sec to midnight", () => {
+  expect(getDateByTimeString("2019-05-17 23:59:59")).toEqual(
+    "Zajtra - Piatok 17. máj"
+  );
+});
 test("Convert date to text - other day bigger than actual", () => {
   expect(getDateByTimeString("2019-05-18 00:00:00")).toEqual("Sobota 18. máj");
 });
@@ -24,4 +28,7 @@ test("Convert date to text - other day smaller than actual", () => {
 });
 test("Invalid date", () => {
   expect(getDateByTimeString("das")).toEqual("Invalid Date");
+});
+test("Invalid time", () => {
+  expect(getDateByTimeString("2019-05-17 23:61:59")).toEqual("Invalid Date");
 });
