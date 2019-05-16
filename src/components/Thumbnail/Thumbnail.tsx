@@ -1,4 +1,4 @@
-import React, { FC, Children } from "react";
+import React, { FC } from "react";
 import { Button } from "./Button";
 import { Description } from "./Description";
 import { Image } from "./Image";
@@ -19,9 +19,9 @@ export const Thumbnail: FC<IProps> = ({
   alt
 }) => (
   <div className="p-2 w-1/5 shadow block">
-    <Image icon={icon} alt={alt} classname="mb-2" />
+    <Image icon={icon} alt={alt} />
     <Name>{name}</Name>
-    <Description classname="mb-4">{description}</Description>
+    <Description>{description}</Description>
     <Button>{button}</Button>
   </div>
 );
