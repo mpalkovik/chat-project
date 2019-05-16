@@ -13,8 +13,6 @@ interface IOval {
 }
 const Oval = styled.div<IOval>`
   background: url(${props => props.url}) no-repeat center;
-  display: inline-block;
-  background-position: center;
 `;
 export const Icon: FC<IProps> = ({ src, url, title, to }) => (
   <Link className="p-6 no-underline m-1" to={to}>

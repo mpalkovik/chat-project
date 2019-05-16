@@ -17,7 +17,7 @@ export const LandingPageWrapper = () => (
     <div className="pt-4 pb-24">
       <Logo />
     </div>
-    <div className="descriptionWrapper lg:w-3/5">
+    <div className="descriptionWrapper lg:w-2/3">
       <Description>
         CHAT je unikátnym medzinárodným arteterapeutickým centrom v Košiciach
         pre deti, mládež a dospelých, ktoré sa zaoberá liečbou umením použitím
@@ -25,7 +25,7 @@ export const LandingPageWrapper = () => (
       </Description>
     </div>
     <List />
-    <div className="descriptionWrapper lg:w-3/5">
+    <div className="descriptionWrapper lg:w-2/3">
       <Description>
         Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
       </Description>
