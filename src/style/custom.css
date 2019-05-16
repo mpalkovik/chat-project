@@ -1,46 +1,54 @@
-@responsive{
-  .bg-cover-image{
-         background-image: url('../static/svg/yellowfooterbig.svg');
-         background-size: 100% 100%;
-         height: 473px;
-     } 
-     .lg\:bg-cover-image {
-       background-image: url('../static/svg/yellowfooterbig.svg');
-       background-size: auto 100%;
-       height: 470px;
-     }
- 
-     .bg-oval{
-       background-image: url('../static/svg/ovals.svg');
-       position: absolute;
-       mix-blend-mode:multiply;
-       padding-top: 50px;
-       background-repeat: no-repeat;
-       background-size: cover;
-       width: 293px;
-       height: 409px;
-       right: 0;
-       top: 30px;
-    } 
-     .lg\:bg-oval {
-       background-image: url('../static/svg/ovals.svg');
-       width: 211px;
-       height: 241px;
-       top: 20px;
-    } 
-    .social-icons{
-      position: absolute;
-      right: 0;
-      z-index: 1;
-      padding-right: 64px;
-      padding-bottom: 128px;
-    }
-    .lg\:social-icons{
-      padding-right: 40px;
-      padding-bottom: 230px;
-    }
-
-   }
+@responsive {
+  .bg-cover-image {
+    background-image: url('../static/svg/yellowfooterbig.svg');
+    background-size: 100% 100%;
+    height: 473px;
+  } 
+  .lg\:bg-cover-image {
+    background-image: url('../static/svg/yellowfooterbig.svg');
+    background-size: auto 100%;
+    height: 470px;
+  }
+  .bg-oval {
+    background-image: url('../static/svg/ovals.svg');
+    position: absolute;
+    mix-blend-mode:multiply;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 409px;
+    right: 0;
+    top: 20px;
+  } 
+  .sm\:bg-oval {
+    background-image: url('../static/svg/ovals.svg');
+    width: 251px;
+    height: 301px;
+    top: 20px;
+  }
+  .lg\:bg-oval {
+    background-image: url('../static/svg/ovals.svg');
+    width: 211px;
+    height: 241px;
+    top: 20px;
+  } 
+  .social-icons {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding-right: 64px;
+    padding-bottom: 230px;
+  }
+  .sm\:social-icons {
+    padding-right: 64px;
+    padding-bottom: 230px;
+  }
+  .lg\:social-icons {
+    padding-right: 40px;
+    padding-bottom: 315px;
+  }
+}
 
 .link {
   @apply font-gilbert no-underline inline-block font-bold text-base text-black;
