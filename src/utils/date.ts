@@ -1,22 +1,36 @@
 import dayjs from "dayjs";
 import "dayjs/locale/sk";
 
-export const getDateByTimestamp = (timestamp: number): string => {
-  const diff = dayjs()
-    .startOf("day")
-    .diff(dayjs(timestamp * 1000).startOf("day"), "day", true);
-
-  const day =
-    diff <= -2 ? null : diff <= -1 ? "Zajtra" : diff <= 0 ? "Dnes" : null;
-  if (day) {
-    return (
-      day +
-      dayjs(timestamp * 1000)
-        .locale("sk")
-        .format(" DD. MMM")
-    );
+const getCalendar = (difference: number): "Dnes" | "Zajtra" | null => {
+  const roundedDifference = Math.floor(difference);
+  if (roundedDifference < -1 || roundedDifference > 0) {
+    return null;
   }
-  return dayjs(timestamp * 1000)
+  return roundedDifference === -1 ? "Zajtra" : "Dnes";
+};
+
+const getDateObject = (date: string): Date => new Date(date);
+
+export const getDifferenceBetweenDate = (dateObject: Date): number => {
+  return dayjs()
+    .startOf("day")
+    .diff(dayjs(dateObject).startOf("day"), "day", true);
+};
+const getFormattedDate = (dateObject: Date): string =>
+  dayjs(dateObject)
     .locale("sk")
     .format("dddd DD. MMM");
+
+export const getDateByTimeString = (date: string): string => {
+  const dateObject = getDateObject(date);
+  if (isNaN(dateObject.getTime())) {
+    return "Invalid Date";
+  }
+  const diff = getDifferenceBetweenDate(dateObject);
+
+  const calendar = getCalendar(diff);
+
+  return calendar
+    ? `${calendar} - ${getFormattedDate(dateObject)}`
+    : getFormattedDate(dateObject);
 };
