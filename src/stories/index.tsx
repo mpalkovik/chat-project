@@ -7,7 +7,20 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header/Header";
 import "../style/index.css";
 import "../style/fonts.css";
+import { Button } from "../components/Button";
+import { Input } from "../components/Input";
 import { Footer } from "../components/footer";
+
+storiesOf("Buttons", module).add("Button primary", () => (
+  <Button isInverted={true}>Button Primary</Button>
+));
+storiesOf("Buttons", module).add("Button secondary", () => (
+  <Button>Button Secondary</Button>
+));
+storiesOf("Buttons", module).add("Close", () => <Button>X</Button>);
+storiesOf("Input", module).add("normal", () => (
+  <Input name="Email" placeholder="Zadajte Váš email" />
+));
 
 storiesOf("Footer", module).add("footer", () => <Footer />);
 storiesOf("Popups", module)
