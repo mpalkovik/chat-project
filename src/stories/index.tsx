@@ -7,9 +7,25 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header/Header";
 import "../style/index.css";
 import "../style/fonts.css";
-import { Footer } from "../components/footer";
+import { Button } from "../components/Button";
+import { Input } from "../components/Input";
+import { Footer } from "../components/Footer";
 
-storiesOf("Footer", module).add("footer", () => <Footer />);
+storiesOf("Buttons", module)
+  .add("Button", () => <Button>Button</Button>)
+  .add("Button stretched", () => <Button isStretched>Button</Button>)
+  .add("Button inverted", () => <Button isInverted>Button</Button>)
+  .add("Button inverted stretched", () => (
+    <Button isStretched isInverted>
+      Button
+    </Button>
+  ));
+
+storiesOf("Input", module).add("normal", () => (
+  <Input name="Email" placeholder="Zadajte Váš email" />
+));
+
+storiesOf("Footer", module).add("Footer", () => <Footer />);
 storiesOf("Popups", module)
   .add("CreditPopup", () => <CreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
