@@ -4,7 +4,7 @@ import Email from "../../static/svg/email.svg";
 import { Icon } from "../Icon";
 
 export const Contacts = () => (
-  <div className="h-6 w-1/3">
+  <div className="ml-6 mt-2 lg:mt-0 sm:mt-0 mr-4">
     <div className="pb-1 flex justify-start items-center">
       <div className="mr-3 w-4">
         <Icon src={Phone} />
@@ -12,7 +12,7 @@ export const Contacts = () => (
       <div className="font-lato text-xs text-black">+421 905 271 220</div>
     </div>
     <div className="pb-1 flex justify-start items-center">
-      <div className="mr-3 w-8 lg:w-4">
+      <div className="mr-3 w-4 lg:w-4">
         <Icon src={Email} />
       </div>
       <div className="font-lato text-xs">
