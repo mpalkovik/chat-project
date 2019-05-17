@@ -23,7 +23,7 @@ export const Reservation: FC<IProps> = ({
         </div>
       </div>
       <div className="pt-2 border-b border-solid border-lilac" />
-      <div className="pt-4 text-sm font-lato font-bold">{numberOfPlace}</div>
+      <div className="pt-5 text-sm font-lato font-bold">{numberOfPlace}</div>
       <div className="pt-1 flex flex-row">
         <button
           onClick={decrement}
