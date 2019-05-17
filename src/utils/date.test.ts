@@ -6,54 +6,54 @@ import {
 } from "./date";
 describe("getDifferenceBetweenDate", () => {
   test("Testing difference between dates - no difference", () => {
-    expect(getDifferenceBetweenDate(new Date("2019-05-16 00:00:00"))).toEqual(
+    expect(getDifferenceBetweenDate(new Date("2019-05-17 00:00:00"))).toEqual(
       0
     );
   });
   test("Testing difference between dates - One day", () => {
-    expect(getDifferenceBetweenDate(new Date("2019-05-17 00:00:00"))).toEqual(
-      -1
+    expect(getDifferenceBetweenDate(new Date("2019-05-18 00:00:00"))).toEqual(
+      1
     );
   });
   test("Testing difference between dates - More than one day", () => {
-    expect(getDifferenceBetweenDate(new Date("2019-05-18 00:00:00"))).toEqual(
-      -2
+    expect(getDifferenceBetweenDate(new Date("2019-05-19 00:00:00"))).toEqual(
+      2
     );
   });
   test("Testing difference between dates - yesterday", () => {
-    expect(getDifferenceBetweenDate(new Date("2019-05-15 00:00:00"))).toEqual(
-      1
+    expect(getDifferenceBetweenDate(new Date("2019-05-16 00:00:00"))).toEqual(
+      -1
     );
   });
 });
 describe("getDateByTimeString", () => {
   test("Convert date to text - today", () => {
-    expect(getDateByTimeString("2019-05-16 00:00:00")).toEqual(
-      "Dnes - Štvrtok 16. máj"
+    expect(getDateByTimeString("2019-05-17 00:00:00")).toEqual(
+      "Dnes - Piatok 17. máj"
     );
   });
 
   test("Convert date to text - today 1 sec to midnight", () => {
-    expect(getDateByTimeString("2019-05-16 23:59:59")).toEqual(
-      "Dnes - Štvrtok 16. máj"
+    expect(getDateByTimeString("2019-05-17 23:59:59")).toEqual(
+      "Dnes - Piatok 17. máj"
     );
   });
 
   test("Convert date to text - tommorow", () => {
-    expect(getDateByTimeString("2019-05-17 00:00:00")).toEqual(
-      "Zajtra - Piatok 17. máj"
+    expect(getDateByTimeString("2019-05-18 00:00:00")).toEqual(
+      "Zajtra - Sobota 18. máj"
     );
   });
 
   test("Convert date to text - tommorow 1 sec to midnight", () => {
-    expect(getDateByTimeString("2019-05-17 23:59:59")).toEqual(
-      "Zajtra - Piatok 17. máj"
+    expect(getDateByTimeString("2019-05-18 23:59:59")).toEqual(
+      "Zajtra - Sobota 18. máj"
     );
   });
 
   test("Convert date to text - other day bigger than actual", () => {
-    expect(getDateByTimeString("2019-05-18 00:00:00")).toEqual(
-      "Sobota 18. máj"
+    expect(getDateByTimeString("2019-05-19 00:00:00")).toEqual(
+      "Nedeľa 19. máj"
     );
   });
 
@@ -77,13 +77,13 @@ describe("getCalendar", () => {
     expect(getCalendar(0)).toEqual("Dnes");
   });
   test("Tomorrow", () => {
-    expect(getCalendar(-1)).toEqual("Zajtra");
+    expect(getCalendar(1)).toEqual("Zajtra");
   });
-  test("Null smaller than -1", () => {
-    expect(getCalendar(-2)).toEqual(null);
+  test("Null smaller than 0", () => {
+    expect(getCalendar(-1)).toEqual(null);
   });
-  test("Null bigger than 0", () => {
-    expect(getCalendar(1)).toEqual(null);
+  test("Null bigger than 1", () => {
+    expect(getCalendar(2)).toEqual(null);
   });
 });
 

@@ -1,27 +1,26 @@
 import dayjs from "dayjs";
 import "dayjs/locale/sk";
-
-// tested
+const TODAY = 0;
+const TOMMOROW = 1;
 export const getCalendar = (difference: number): "Dnes" | "Zajtra" | null => {
   const roundedDifference = Math.floor(difference);
-  if (roundedDifference < -1 || roundedDifference > 0) {
+  if (roundedDifference < TODAY || roundedDifference > TOMMOROW) {
     return null;
   }
-  return roundedDifference === -1 ? "Zajtra" : "Dnes";
+  return roundedDifference === TOMMOROW ? "Zajtra" : "Dnes";
 };
 
-// tested
 export const getDifferenceBetweenDate = (dateObject: Date): number => {
-  return dayjs()
+  return dayjs(dateObject)
     .startOf("day")
-    .diff(dayjs(dateObject).startOf("day"), "day", true);
+    .diff(dayjs().startOf("day"), "day", true);
 };
-// tested
+
 export const getFormattedDate = (dateObject: Date): string =>
   dayjs(dateObject)
     .locale("sk")
     .format("dddd DD. MMM");
-// tested
+
 export const getDateByTimeString = (date: string): string => {
   const dateObject = new Date(date);
   if (isNaN(dateObject.getTime())) {
