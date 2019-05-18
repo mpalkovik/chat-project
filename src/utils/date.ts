@@ -1,8 +1,9 @@
 import dayjs from "dayjs";
 import "dayjs/locale/sk";
-const TODAY = 0;
-const TOMMOROW = 1;
+
 export const getCalendar = (difference: number): "Dnes" | "Zajtra" | null => {
+  const TODAY = 0;
+  const TOMMOROW = 1;
   const roundedDifference = Math.floor(difference);
   if (roundedDifference < TODAY || roundedDifference > TOMMOROW) {
     return null;
