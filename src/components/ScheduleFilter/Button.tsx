@@ -1,6 +1,11 @@
 import React, { FC, useState } from "react";
+import classnames from "classnames";
 
-export const Button: FC = ({}) => {
+interface IProps {
+  classname?: string;
+}
+
+export const Button: FC<IProps> = ({ classname }) => {
   const [text, setText] = useState("Všetky CHAT arteterapie");
 
   function handleTextChange() {
@@ -9,7 +14,13 @@ export const Button: FC = ({}) => {
 
   return (
     <div>
-      <button className="w-full" onClick={handleTextChange}>
+      <button
+        className={classnames(
+          "w-full text-justify h-10 rounded-xl font-base font-lato bg-black text-white font-black",
+          classname
+        )}
+        onClick={handleTextChange}
+      >
         {text}
       </button>
     </div>
