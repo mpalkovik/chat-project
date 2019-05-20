@@ -52,6 +52,7 @@ let colors = {
   grey: "#999696",
   lilac: "#ebebec",
   maize: "#ffc450",
+  darkblue: "#4d5c74",
   purple: "#db3eb1",
   red: "#f93822",
   white: "#ffffff",
