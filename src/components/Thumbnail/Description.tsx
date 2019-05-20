@@ -5,13 +5,7 @@ interface IProps {
   classname?: string;
 }
 export const Description: FC<IProps> = ({ children, classname }) => (
-  <p
-    style={{
-      height: "36px",
-      lineHeight: "18px"
-    }}
-    className={classnames("text-sm font-lato w-auto", classname)}
-  >
+  <p className={classnames("text-sm font-lato h-10 leading-less", classname)}>
     {children}
   </p>
 );
