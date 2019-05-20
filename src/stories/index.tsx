@@ -6,6 +6,7 @@ import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPop
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
 import { Home } from "../components/Home";
+import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import icon from "../static/svg/homer.svg";
 import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
@@ -45,3 +46,4 @@ storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
   />
 ));
 storiesOf("Home", module).add("Home", () => <Home />);
+storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
