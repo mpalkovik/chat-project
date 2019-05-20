@@ -5,7 +5,7 @@ import { ImageHeader } from "./ImageHeader";
 import { Navigation } from "./Navigation";
 import { UserProfile } from "./UserProfile";
 import { HamburgerMenu } from "./HamburgerMenu";
-import times from "../../static/svg/times.svg";
+import closeImg from "../../static/svg/closeImg.svg";
 import { UserDropdownMenu } from "./UserDropdownMenu";
 
 export const Header = () => {
@@ -17,7 +17,7 @@ export const Header = () => {
         <div>
           <div className="flex justify-end mr-6 mt-4">
             <div onClick={() => setOpenMenu(false)}>
-              <ImageHeader src={times} />
+              <ImageHeader src={closeImg} />
             </div>
           </div>
           <HamburgerMenu />
@@ -32,7 +32,7 @@ export const Header = () => {
         <div className="lg:hidden">
           <div className="flex justify-end mr-6 mt-4">
             <div onClick={() => setUserProfile(false)}>
-              <ImageHeader src={times} />
+              <ImageHeader src={closeImg} />
             </div>
           </div>
           <UserDropdownMenu
