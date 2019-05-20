@@ -1,14 +1,17 @@
 import { configure, addParameters } from "@storybook/react";
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { viewports } from "./viewports";
 
 addParameters({
+  options: {
+    showPanel: false
+  },
   viewport: {
     viewports: {
       ...INITIAL_VIEWPORTS,
-      ...viewports,
-    },
-  },
+      ...viewports
+    }
+  }
 });
 
 function loadStories() {
