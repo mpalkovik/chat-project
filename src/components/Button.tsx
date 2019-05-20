@@ -3,13 +3,13 @@ import classnames from "classnames";
 
 interface IProps {
   isInverted?: boolean;
-  stretched?: boolean;
+  isStretched?: boolean;
 }
 
 export const Button: FC<IProps> = ({
   isInverted = false,
   children,
-  stretched = false
+  isStretched = false
 }) => (
   <button
     className={classnames(
@@ -20,7 +20,7 @@ export const Button: FC<IProps> = ({
             ? "bg-black text-white hover:bg-dark-black"
             : "bg-white text-black"
         }`]: true,
-        [`${stretched ? "w-full" : "pr-8 pl-8"}`]: true
+        [`${isStretched ? "w-full" : "pr-8 pl-8"}`]: true
       }
     )}
   >
