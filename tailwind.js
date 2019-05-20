@@ -52,6 +52,7 @@ let colors = {
   grey: "#999696",
   lilac: "#ebebec",
   maize: "#ffc450",
+  darkblue: "#4d5c74",
   purple: "#db3eb1",
   red: "#f93822",
   white: "#ffffff",
@@ -201,10 +202,11 @@ module.exports = {
   */
 
   leading: {
-    none: 1,
-    tight: 1.25,
-    normal: 1.5,
-    loose: 2
+    none: "16px",
+    less: "18px",
+    tight: "20px",
+    normal: "24px",
+    loose: "32px"
   },
 
   /*

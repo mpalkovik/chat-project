@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import backgroundImage from "../../static/svg/backgroundImage.svg";
 import { Article } from "./Article";
 import articleImage from "../../static/svg/articleImage.png";
 import { ImageHeader } from "../Header/ImageHeader";
-// import { BackgroundImage } from "";
+import { BackgroundImage } from "../Homepage/BackgroundImage";
 
 export const ArticleContainer = () => {
   const articleData = {
@@ -18,23 +18,23 @@ export const ArticleContainer = () => {
   };
 
   return (
-    // <BackgroundImage url={backgroundImage} isCover>
-    <div className="p-6">
-      <div className="bg-white">
-        <ImageHeader
-          src={articleData.src}
-          className="flex w-full h-64 justify-center m-0 p-3"
-        />
-        <Article
-          date={articleData.date}
-          title={articleData.title}
-          subtitle={articleData.subtitle}
-          paragraph={articleData.paragraph}
-          source="Zdroj:"
-          text={articleData.source}
-        />
+    <BackgroundImage url={backgroundImage} isCover>
+      <div className="p-6">
+        <div className="bg-white">
+          <ImageHeader
+            src={articleData.src}
+            className="flex w-full h-64 justify-center m-0 p-3"
+          />
+          <Article
+            date={articleData.date}
+            title={articleData.title}
+            subtitle={articleData.subtitle}
+            paragraph={articleData.paragraph}
+            source="Zdroj:"
+            text={articleData.source}
+          />
+        </div>
       </div>
-    </div>
-    // </BackgroundImage>
+    </BackgroundImage>
   );
 };
