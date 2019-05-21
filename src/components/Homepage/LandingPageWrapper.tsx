@@ -5,6 +5,7 @@ import { Description } from "./Description";
 import { Logo } from "./Logo";
 import { DescriptionWrapper } from "./DescriptionWrapper";
 import { BackgroundImage } from "./BackgroundImage";
+import { Artetherapies } from "./Artetherapies";
 import background from "../../static/svg/backgroundImage.svg";
 
 export const LandingPageWrapper = () => {
@@ -29,6 +30,7 @@ export const LandingPageWrapper = () => {
           <Button>Registrovať sa</Button>
         </div>
       </DescriptionWrapper>
+      <Artetherapies />
     </BackgroundImage>
   );
 };
