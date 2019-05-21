@@ -10,7 +10,7 @@ interface IArticle {
 }
 
 // TODO: load image from the external resource (server)
-// TODO: problem with line height
+
 // TODO: define action for the thumbnail button
 //       (add another thumbnail prop maybe with function
 //       that redirect us to the article page and sends id of the article to display
@@ -29,14 +29,16 @@ export const Artetherapies = () => {
   }, []);
 
   return (
-    <div className="m-0 bg-white relative lg:m-12 text-center pl-32 pr-32 shadow">
+    <div className="m-0 bg-white relative lg:m-12 text-center pl-8 pr-8 lg:pl-32 lg:pr-32 shadow">
       <div className="p-6">
         <h1 className="font-gilbert text-2xl">Arteterapie</h1>
       </div>
       <div className="flex flex-col items-center justify-center lg:flex-row">
-        {articles.length !== 0 ? (
+        {articles.length === 0 ? (
+          <div>No articles loaded :(</div>
+        ) : (
           articles.map((article: IArticle) => (
-            <div key={article.id} className="ml-2">
+            <div key={article.id} className="ml-0 mt-2 lg:mt-0 lg:ml-2">
               <Thumbnail
                 name={article.heading}
                 icon={icon}
@@ -45,8 +47,6 @@ export const Artetherapies = () => {
               />
             </div>
           ))
-        ) : (
-          <div>No articles loaded :(</div>
         )}
       </div>
       <div className="mb-6 pb-6 mt-4">

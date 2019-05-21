@@ -6,11 +6,10 @@ import { Logo } from "./Logo";
 import { DescriptionWrapper } from "./DescriptionWrapper";
 import { BackgroundImage } from "./BackgroundImage";
 import { Artetherapies } from "./Artetherapies";
-import background from "../../static/svg/backgroundImage.svg";
 
 export const LandingPageWrapper = () => {
   return (
-    <BackgroundImage url={background} isCover>
+    <>
       <div className="pt-4 pb-24">
         <Logo />
       </div>
@@ -31,6 +30,6 @@ export const LandingPageWrapper = () => {
         </div>
       </DescriptionWrapper>
       <Artetherapies />
-    </BackgroundImage>
+    </>
   );
 };
