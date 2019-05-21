@@ -12,18 +12,22 @@ export const Header = () => {
   return (
     <div>
       {openMenu && (
-        <div>
-          <div className="flex justify-end mr-6 mt-4">
-            <div onClick={() => setOpenMenu(false)}>
-              <ImageHeader src={closeImg} />
+        <>
+          <div className="lg:hidden bg-white z-50 absolute w-full">
+            <div className="flex justify-end mr-6 mt-4">
+              <div onClick={() => setOpenMenu(false)}>
+                <ImageHeader src={closeImg} />
+              </div>
+            </div>
+            <div className="z-50">
+              <HamburgerMenu />
             </div>
           </div>
-          <HamburgerMenu />
           <div
-            className="opacity-75 bg-darkblue h-full w-full lg:hidden"
+            className="lg:hidden opacity-75 z-20 bg-darkblue fixed h-full w-full inset-0 lg:hidden"
             onClick={() => setOpenMenu(false)}
           />
-        </div>
+        </>
       )}
       <div className="flex justify-between items-center content-center h-16 lg:h-12 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
