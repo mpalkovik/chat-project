@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import classnames from "classnames";
-import DropIcon from "../../static/svg/icon-only.svg";
+import DropIcon from "../../static/svg/icon-filter.svg";
 
 interface IProps {
   show: boolean;
@@ -17,7 +17,7 @@ export const Dropdown: FC<IProps> = ({ show }) => {
       )}
     >
       <div>{show ? "Filter" : "Všetky CHAT arteterapie"}</div>
-      <img src={DropIcon} className="pt-6 pl-2" />
+      <img src={DropIcon} className="pr-2" />
     </div>
   );
 };

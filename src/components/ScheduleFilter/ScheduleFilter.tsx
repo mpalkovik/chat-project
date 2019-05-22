@@ -7,7 +7,7 @@ export const ScheduleFilter: FC<RouteComponentProps> = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="w-1/3 relative cursor-pointer">
+    <div className="cursor-pointer">
       <div onClick={() => setShow(!show)}>
         <Dropdown show={show} />
       </div>
