@@ -17,7 +17,7 @@ export const Schedule = () => {
     },
     {
       id: 6,
-      attendants: 2,
+      attendants: 5,
       maxAttendants: 6,
       date: "14:00",
       price: 20,
@@ -28,23 +28,18 @@ export const Schedule = () => {
     }
   ];
   return (
-    <div
-      style={{ maxWidth: "730px", width: "100%" }}
-      className="shadow-lg m-auto pt-4"
-    >
-      <div className="w-full">
-        <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
-        {data.map(terapy => {
-          return (
-            <div
-              key={terapy.id}
-              className="border-b border-solid border-lilac pl-6 pr-6 lg:pb-6 pb-4"
-            >
-              <Reservation {...terapy} />
-            </div>
-          );
-        })}
-      </div>
+    <div style={{ maxWidth: "730px" }} className="shadow-lg m-auto pt-4 w-full">
+      <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
+      {data.map(therapy => {
+        return (
+          <div
+            key={therapy.id}
+            className="border-b border-solid border-lilac pl-6 pr-6 lg:pb-6 pb-4"
+          >
+            <Reservation {...therapy} />
+          </div>
+        );
+      })}
     </div>
   );
 };

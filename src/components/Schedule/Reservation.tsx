@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { ReservationInfo } from "../Schedule/ReservationInfo";
-import { ProgressBar } from "./ProgressBar";
+import { AvailabilityBar } from "./AvailabilityBar";
 import { Counter } from "../Schedule/Counter";
 
 interface IProps {
@@ -28,7 +28,7 @@ export const Reservation: FC<IProps> = ({
   <div className="flex flex-wrap">
     <div className="w-full lg:w-1/2">
       <ReservationInfo
-        time={date}
+        date={date}
         therapyName={name}
         doctorName={therapeutName}
         place={room}
@@ -37,7 +37,7 @@ export const Reservation: FC<IProps> = ({
       />
     </div>
     <div className="w-full lg:w-1/2">
-      <ProgressBar
+      <AvailabilityBar
         maxReservation={maxAttendants}
         currentReservation={attendants}
       />

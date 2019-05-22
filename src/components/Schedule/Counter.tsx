@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { Icon } from "../Icon";
 import minusIcon from "../../static/svg/minus.svg";
 import plusIcon from "../../static/svg/plus.svg";
@@ -20,7 +20,6 @@ export const Counter = () => {
         <div className="w-10 h-10">
           <Button isStretched>{counter}</Button>
         </div>
-
         <div className="w-10 h-10">
           <Button onClick={increment} isStretched>
             <Icon src={plusIcon} classname="w-6" />
