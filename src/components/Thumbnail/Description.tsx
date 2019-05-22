@@ -5,7 +5,7 @@ interface IProps {
   classname?: string;
 }
 export const Description: FC<IProps> = ({ children, classname }) => (
-  <p className={classnames("text-sm font-lato h-10 leading-less", classname)}>
+  <p className={classnames("text-12 font-lato h-40 leading-less", classname)}>
     {children}
   </p>
 );

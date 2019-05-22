@@ -6,6 +6,6 @@ interface IProps {
 
 export const UserIcon: FC<IProps> = ({ credentials }) => (
   <div className="hidden lg:inline-block">
-    <div className="font-gilbert font-bold text-lg">{credentials}</div>
+    <div className="font-gilbert font-bold text-18">{credentials}</div>
   </div>
 );
