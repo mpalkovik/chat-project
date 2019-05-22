@@ -3,14 +3,14 @@ import { Dropdown } from "./Dropdown";
 import { List } from "./List";
 
 export const ScheduleFilter = () => {
-  const [show, setShow] = useState(false);
+  const [isShown, setShown] = useState(false);
 
   return (
     <div className="cursor-pointer">
-      <div onClick={() => setShow(!show)}>
-        <Dropdown show={show} />
+      <div onClick={() => setShown(!isShown)}>
+        <Dropdown isDisplayed={isShown} />
       </div>
-      {show && <List />}
+      {isShown && <List />}
     </div>
   );
 };

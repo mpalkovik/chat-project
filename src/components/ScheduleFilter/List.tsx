@@ -17,12 +17,10 @@ const data = [
   "Indivindi"
 ];
 
-export const List = () => {
-  return (
-    <div className="rounded-b-xl border-2 border border-solid pb-6 absolute pin-x bg-white">
-      {data.map(text => (
-        <CheckboxLine key={text}>{text}</CheckboxLine>
-      ))}
-    </div>
-  );
-};
+export const List = () => (
+  <div className="rounded-b-xl border-2 border border-solid pb-6 absolute pin-x bg-white">
+    {data.map(text => (
+      <CheckboxLine key={text}>{text}</CheckboxLine>
+    ))}
+  </div>
+);
