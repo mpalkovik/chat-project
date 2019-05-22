@@ -16,24 +16,24 @@ afterAll(() => {
 });
 
 describe("Testing date utility", () => {
-  describe("Function that returns difference between actual date and date given as a parameter", () => {
-    test("Testing difference between dates - no difference", () => {
+  describe("returns difference between actual date and date given as a parameter", () => {
+    test("difference between dates - no difference", () => {
       expect(getDifferenceBetweenDate(new Date())).toEqual(DatePrefix.TODAY);
     });
-    test("Testing difference between dates - One day", () => {
+    test("difference between dates - One day", () => {
       expect(getDifferenceBetweenDate(new Date("2019-05-19"))).toEqual(
         DatePrefix.TOMMOROW
       );
     });
-    test("Testing difference between dates - More than one day", () => {
+    test("difference between dates - More than one day", () => {
       expect(getDifferenceBetweenDate(new Date("2019-05-20"))).toEqual(2);
     });
-    test("Testing difference between dates - yesterday", () => {
+    test("difference between dates - yesterday", () => {
       expect(getDifferenceBetweenDate(new Date("2019-05-17"))).toEqual(-1);
     });
   });
 
-  describe("Function that returns formatted date", () => {
+  describe("returns formatted date", () => {
     test("Convert date to text - today", () => {
       expect(getDateByTimeString("2019-05-18 00:00:00")).toEqual(
         "Dnes - Sobota 18. máj"
@@ -74,7 +74,7 @@ describe("Testing date utility", () => {
     });
   });
 
-  describe('Testing function that returns prefix "Dnes" or "Zajtra"', () => {
+  describe('returns prefix "Dnes" or "Zajtra"', () => {
     test("Calendar should return Dnes", () => {
       expect(getDatePrefix(0)).toEqual("Dnes");
     });
@@ -89,7 +89,7 @@ describe("Testing date utility", () => {
     });
   });
 
-  describe("Testing function that formats date and adds the name of the day in front of date", () => {
+  describe("formats date and adds the name of the day in front of date", () => {
     test('Should add "Pondelok" before formatted date', () => {
       expect(getFormattedDate(new Date("2019-05-20 00:00:00"))).toEqual(
         "Pondelok 20. máj"
