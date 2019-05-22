@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { ProgressBar } from "./ProgressBar";
 
 interface IProps {
   currentReservation: number;
@@ -19,10 +20,7 @@ export const AvailabilityBar: FC<IProps> = ({
         </div>
       </div>
       <div className="pt-2 border-b border-solid border-lilac relative flex items-center">
-        <div
-          style={{ width: (currentReservation / maxReservation) * 100 + "%" }}
-          className="border-b border-solid border-2 border-black inline-block absolute"
-        />
+        <ProgressBar actual={currentReservation} max={maxReservation} />
       </div>
     </>
   );

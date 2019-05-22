@@ -6,8 +6,6 @@ import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPop
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
 import { Schedule } from "../components/Schedule/Schedule";
-import "../style/index.css";
-import "../style/fonts.css";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import icon from "../static/svg/homer.svg";
@@ -16,6 +14,7 @@ import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
+import { ProgressBar } from "../components/Schedule/ProgressBar";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -65,3 +64,9 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
+
+storiesOf("ProgressBar", module)
+  .add("ProgressBar", () => <ProgressBar actual={1} max={6} />)
+  .add("ProgressBar empty", () => <ProgressBar actual={0} max={6} />)
+  .add("ProgressBar half", () => <ProgressBar actual={3} max={6} />)
+  .add("ProgressBar full", () => <ProgressBar actual={6} max={6} />);
