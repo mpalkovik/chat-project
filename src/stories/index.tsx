@@ -24,6 +24,11 @@ storiesOf("Buttons", module)
     <Button isStretched isInverted>
       Button
     </Button>
+  ))
+  .add("Button onClick", () => (
+    <Button isStretched isInverted onClick={() => alert("Hi")}>
+      Button
+    </Button>
   ));
 
 storiesOf("Input", module).add("normal", () => (
