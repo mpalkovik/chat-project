@@ -7,18 +7,19 @@ interface IArticle {
   id: number;
   heading: string;
   insight: string;
+  title_photo: string;
 }
 
 // TODO: load image from the external resource (server)
 
 // TODO: define action for the thumbnail button
 //       (add another thumbnail prop maybe with function
-//       that redirect us to the article page and sends id of the article to display
+//       that redirect us to the articles page and sends id of the article to display
 //       in article page: get id and in useeffect hook fetch the entire article and display it
 //       should be easy, I hope)
 // TODO: when the page that shows all articles will be finished -> add action on "Všetky články"
 //       button
-export const Artetherapies = () => {
+export const NewestArticles = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -38,10 +39,14 @@ export const Artetherapies = () => {
           <div>No articles loaded :(</div>
         ) : (
           articles.map((article: IArticle) => (
-            <div key={article.id} className="ml-0 mt-2 lg:mt-0 lg:ml-2">
+            <div
+              style={{ maxWidth: "350px" }}
+              key={article.id}
+              className="ml-0 mt-2 lg:mt-0 lg:ml-2"
+            >
               <Thumbnail
                 name={article.heading}
-                icon={icon}
+                icon={"http://localhost/storage/" + article.title_photo}
                 alt="super"
                 description={article.insight}
               />
