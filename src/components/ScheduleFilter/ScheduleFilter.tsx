@@ -1,9 +1,8 @@
 import React, { FC, useState } from "react";
-import { RouteComponentProps } from "@reach/router";
 import { Dropdown } from "./Dropdown";
 import { List } from "./List";
 
-export const ScheduleFilter: FC<RouteComponentProps> = () => {
+export const ScheduleFilter = () => {
   const [show, setShow] = useState(false);
 
   return (
