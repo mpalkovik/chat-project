@@ -1,14 +1,20 @@
 import dayjs from "dayjs";
 import "dayjs/locale/sk";
 
-export const getCalendar = (difference: number): "Dnes" | "Zajtra" | null => {
-  const TODAY = 0;
-  const TOMMOROW = 1;
+enum DatePrefix {
+  TODAY = 0,
+  TOMMOROW = 1
+}
+
+export const getDatePrefix = (difference: number): "Dnes" | "Zajtra" | null => {
   const roundedDifference = Math.floor(difference);
-  if (roundedDifference < TODAY || roundedDifference > TOMMOROW) {
+  if (
+    roundedDifference < DatePrefix.TODAY ||
+    roundedDifference > DatePrefix.TOMMOROW
+  ) {
     return null;
   }
-  return roundedDifference === TOMMOROW ? "Zajtra" : "Dnes";
+  return roundedDifference === DatePrefix.TOMMOROW ? "Zajtra" : "Dnes";
 };
 
 export const getDifferenceBetweenDate = (dateObject: Date): number => {
@@ -29,9 +35,9 @@ export const getDateByTimeString = (date: string): string => {
   }
   const diff = getDifferenceBetweenDate(dateObject);
 
-  const calendar = getCalendar(diff);
+  const prefix = getDatePrefix(diff);
 
-  return calendar
-    ? `${calendar} - ${getFormattedDate(dateObject)}`
+  return prefix
+    ? `${prefix} - ${getFormattedDate(dateObject)}`
     : getFormattedDate(dateObject);
 };
