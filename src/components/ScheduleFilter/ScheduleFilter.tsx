@@ -8,7 +8,7 @@ export const ScheduleFilter = () => {
   return (
     <div className="cursor-pointer">
       <div onClick={() => setShown(!isShown)}>
-        <Dropdown isDisplayed={isShown} />
+        <Dropdown isShown={isShown} />
       </div>
       {isShown && <List />}
     </div>
