@@ -4,7 +4,7 @@ import classnames from "classnames";
 interface IProps {
   isInverted?: boolean;
   isStretched?: boolean;
-  classname?: string;
+  className?: string;
   onClick?: () => void;
 }
 
@@ -12,7 +12,7 @@ export const Button: FC<IProps> = ({
   isInverted = false,
   children,
   isStretched = false,
-  classname,
+  className,
   onClick
 }) => (
   <button
@@ -27,7 +27,7 @@ export const Button: FC<IProps> = ({
         }`]: true,
         [`${isStretched ? "w-full" : "pr-8 pl-8"}`]: true
       },
-      classname
+      className
     )}
   >
     {children}

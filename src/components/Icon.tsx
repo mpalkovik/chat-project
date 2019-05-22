@@ -3,12 +3,12 @@ import classnames from "classnames";
 
 interface IProps {
   src: string;
-  classname?: string;
+  className?: string;
 }
 
-export const Icon: FC<IProps> = ({ src, classname }) => (
+export const Icon: FC<IProps> = ({ src, className }) => (
   <img
     src={src}
-    className={classnames("text-sm font-lato h-10 leading-less", classname)}
+    className={classnames("text-sm font-lato h-10 leading-less", className)}
   />
 );

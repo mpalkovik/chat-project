@@ -14,7 +14,7 @@ export const Counter = () => {
       <div className="pt-1 flex">
         <div className="w-10 h-10">
           <Button onClick={decrement} isStretched>
-            <Icon src={minusIcon} classname="w-6" />
+            <Icon src={minusIcon} className="w-6" />
           </Button>
         </div>
         <div className="w-10 h-10">
@@ -22,7 +22,7 @@ export const Counter = () => {
         </div>
         <div className="w-10 h-10">
           <Button onClick={increment} isStretched>
-            <Icon src={plusIcon} classname="w-6" />
+            <Icon src={plusIcon} className="w-6" />
           </Button>
         </div>
         <Button isInverted>Rezervovať</Button>

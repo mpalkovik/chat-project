@@ -8,9 +8,16 @@ import { Header } from "../components/Header/Header";
 import { Schedule } from "../components/Schedule/Schedule";
 import "../style/index.css";
 import "../style/fonts.css";
+import { Home } from "../components/Home";
+import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
+import icon from "../static/svg/homer.svg";
+import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer";
+import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
+import "../style/index.css";
+import "../style/fonts.css";
 
 storiesOf("Buttons", module)
   .add("Button", () => <Button>Button</Button>)
@@ -20,6 +27,11 @@ storiesOf("Buttons", module)
     <Button isStretched isInverted>
       Button
     </Button>
+  ))
+  .add("Button onClick", () => (
+    <Button isStretched isInverted onClick={() => alert("Hi")}>
+      Button
+    </Button>
   ));
 
 storiesOf("Input", module).add("normal", () => (
@@ -27,10 +39,29 @@ storiesOf("Input", module).add("normal", () => (
 ));
 
 storiesOf("Footer", module).add("Footer", () => <Footer />);
+
 storiesOf("Popups", module)
   .add("CreditPopup", () => <CreditPopup />)
   .add("RegistrationModal", () => <RegistrationPopup />)
   .add("CancelReservation", () => <CancelReservationPopup />)
   .add("ErrorPopup", () => <ErrorPopup />);
+
 storiesOf("Header", module).add("Header", () => <Header />);
 storiesOf("Schedule", module).add("Schedule", () => <Schedule />);
+
+storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
+  <Thumbnail
+    name="MAMA CHAT"
+    icon={icon}
+    alt="super"
+    description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+  />
+));
+
+storiesOf("Home", module).add("Home", () => <Home />);
+
+storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
+
+storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
+  <ScheduleFilter />
+));
