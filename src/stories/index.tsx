@@ -12,6 +12,7 @@ import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer";
+import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -36,7 +37,9 @@ storiesOf("Popups", module)
   .add("RegistrationModal", () => <RegistrationPopup />)
   .add("CancelReservation", () => <CancelReservationPopup />)
   .add("ErrorPopup", () => <ErrorPopup />);
+
 storiesOf("Header", module).add("Header", () => <Header />);
+
 storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
   <Thumbnail
     name="MAMA CHAT"
@@ -45,5 +48,11 @@ storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
     description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
   />
 ));
+
 storiesOf("Home", module).add("Home", () => <Home />);
+
 storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
+
+storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
+  <ScheduleFilter />
+));
