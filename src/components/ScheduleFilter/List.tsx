@@ -18,9 +18,9 @@ const data = [
 ];
 
 export const List = () => (
-  <div className="rounded-b-xl border-2 border border-solid pb-6 absolute pin-x bg-white">
+  <ul className="rounded-b-xl border-2 border border-solid pb-6 absolute pin-x bg-white pl-0">
     {data.map(text => (
       <CheckboxLine key={text}>{text}</CheckboxLine>
     ))}
-  </div>
+  </ul>
 );
