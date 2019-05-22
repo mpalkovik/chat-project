@@ -6,7 +6,7 @@ interface IProps {
   show: boolean;
 }
 
-export const Wrapper: FC<IProps> = ({ show }) => {
+export const Dropdown: FC<IProps> = ({ show }) => {
   return (
     <div
       className={classnames(
