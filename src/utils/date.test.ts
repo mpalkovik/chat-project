@@ -2,7 +2,7 @@ import MockDate from "mockdate";
 import {
   getDateByTimeString,
   getDifferenceBetweenDate,
-  getCalendar,
+  getDatePrefix,
   getFormattedDate
 } from "./date";
 
@@ -73,16 +73,16 @@ describe("Testing date utility", () => {
 
   describe('Testing function that returns prefix "Dnes" or "Zajtra"', () => {
     test("Calendar should return Dnes", () => {
-      expect(getCalendar(0)).toEqual("Dnes");
+      expect(getDatePrefix(0)).toEqual("Dnes");
     });
     test("Calendar should return Zajtra", () => {
-      expect(getCalendar(1)).toEqual("Zajtra");
+      expect(getDatePrefix(1)).toEqual("Zajtra");
     });
     test("Calendar should return null because of smaller parameter than 0", () => {
-      expect(getCalendar(-1)).toEqual(null);
+      expect(getDatePrefix(-1)).toEqual(null);
     });
     test("Calendar should return null because of bigger parameter than 1", () => {
-      expect(getCalendar(2)).toEqual(null);
+      expect(getDatePrefix(2)).toEqual(null);
     });
   });
 
