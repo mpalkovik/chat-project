@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import "dayjs/locale/sk";
 
-enum DatePrefix {
+export enum DatePrefix {
   TODAY = 0,
   TOMMOROW = 1
 }

@@ -3,7 +3,8 @@ import {
   getDateByTimeString,
   getDifferenceBetweenDate,
   getDatePrefix,
-  getFormattedDate
+  getFormattedDate,
+  DatePrefix
 } from "./date";
 
 beforeAll(() => {
@@ -17,10 +18,12 @@ afterAll(() => {
 describe("Testing date utility", () => {
   describe("Function that returns difference between actual date and date given as a parameter", () => {
     test("Testing difference between dates - no difference", () => {
-      expect(getDifferenceBetweenDate(new Date())).toEqual(0);
+      expect(getDifferenceBetweenDate(new Date())).toEqual(DatePrefix.TODAY);
     });
     test("Testing difference between dates - One day", () => {
-      expect(getDifferenceBetweenDate(new Date("2019-05-19"))).toEqual(1);
+      expect(getDifferenceBetweenDate(new Date("2019-05-19"))).toEqual(
+        DatePrefix.TOMMOROW
+      );
     });
     test("Testing difference between dates - More than one day", () => {
       expect(getDifferenceBetweenDate(new Date("2019-05-20"))).toEqual(2);
