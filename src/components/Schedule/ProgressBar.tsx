@@ -5,9 +5,14 @@ interface IProps {
   max: number;
 }
 
-export const ProgressBar: FC<IProps> = ({ actual, max }) => (
-  <div
-    style={{ width: (actual / max) * 100 + "%" }}
-    className="border-b border-solid border-2 border-black inline-block absolute"
-  />
-);
+export const ProgressBar: FC<IProps> = ({ actual, max }) => {
+  if (actual === 0) {
+    return null;
+  }
+  return (
+    <div
+      style={{ width: (actual / max) * 100 + "%" }}
+      className="border-b border-2 border-black absolute"
+    />
+  );
+};
