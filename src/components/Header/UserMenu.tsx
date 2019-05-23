@@ -15,7 +15,7 @@ const menu = [
 
 export const UserMenu = () => (
   <div className="hidden lg:flex flex-col">
-    <div className="pt-24 pb-16 bg-white w-192 rounded-b-lg border-b border-solid border-grey">
+    <div className="pt-24 pb-16 bg-white w-192 rounded-b-8 border-b border-solid border-grey">
       {menu.map(({ src, to, title }) => (
         <div key={title} className="flex flex-row items-center justify-start">
           <ImageHeader src={src} className="ml-12 mr-8" />
