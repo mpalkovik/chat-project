@@ -6,9 +6,11 @@ import { Navigation } from "./Navigation";
 import { UserProfile } from "./UserProfile";
 import { HamburgerMenu } from "./HamburgerMenu";
 import closeImg from "../../static/svg/closeImg.svg";
+import { UserDropdownMenu } from "./UserDropdownMenu";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openUserProfile, setUserProfile] = useState(false);
   return (
     <div>
       {openMenu && (
@@ -29,13 +31,33 @@ export const Header = () => {
           />
         </>
       )}
+
+      {openUserProfile && (
+        <div className="lg:hidden">
+          <div className="flex justify-end mr-6 mt-4">
+            <div onClick={() => setUserProfile(false)}>
+              <ImageHeader src={closeImg} />
+            </div>
+          </div>
+          <UserDropdownMenu
+            userInicials={"FS"}
+            userName={"Feri Schwartzeneger"}
+            credit={4}
+          />
+          <div
+            className="opacity-75 bg-darkblue h-full w-full lg:hidden"
+            onClick={() => setUserProfile(false)}
+          />
+        </div>
+      )}
+
       <div className="flex justify-between items-center content-center h-16 lg:h-12 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
         <div className="flex flex-start lg:w-48">
           <ImageHeader src={chatImg} width={73} className="h-6 lg:ml-12" />
         </div>
         <Navigation />
-        <UserProfile />
+        <UserProfile onClick={() => setUserProfile(true)} />
       </div>
       <div className="bg-lilac h-px" />
     </div>
