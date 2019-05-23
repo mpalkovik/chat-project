@@ -4,15 +4,17 @@ import DropIcon from "../../static/svg/icon-filter.svg";
 
 interface IProps {
   isShown: boolean;
+  onClick: () => void;
 }
 
-export const Dropdown: FC<IProps> = ({ isShown }) => {
+export const Dropdown: FC<IProps> = ({ isShown, onClick }) => {
   return (
     <div
+      onClick={onClick}
       className={classnames(
-        "w-full h-40 font-base font-lato bg-black text-white font-black flex justify-between items-center",
+        "w-full h-40 font-16 font-lato bg-black text-white font-black flex justify-between items-center cursor-pointer",
         {
-          [`${isShown ? "rounded-t-xl pl-40" : "rounded-12 pl-12"}`]: true
+          [`${isShown ? "rounded-t-12 pl-40" : "rounded-12 pl-12"}`]: true
         }
       )}
     >

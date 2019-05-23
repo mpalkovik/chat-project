@@ -41,7 +41,7 @@ export const Header = () => {
             credit={4}
           />
           <div
-            className="opacity-75 bg-darkblue h-full w-full lg:hidden"
+            className="opacity-75 bg-darkblue h-full w-full"
             onClick={() => setUserProfile(false)}
           />
         </div>

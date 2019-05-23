@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Info = () => (
-  <div className="pt-20 pl-24 w-256 h-40">
+  <div className="pt-20 pl-24 h-40">
     <div className="text-10 font-lato font-black">
       OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou
     </div>

@@ -83,6 +83,7 @@ module.exports = {
       "2": "2px",
       "4": "4px",
       "8": "8px",
+      "12": "12px",
       full: "9999px"
     },
     borderWidth: {
@@ -90,8 +91,7 @@ module.exports = {
       "0": "0",
       "2": "2px",
       "4": "4px",
-      "8": "8px",
-      "12": "12px"
+      "8": "8px"
     },
     boxShadow: {
       default:

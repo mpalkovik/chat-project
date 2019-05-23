@@ -21,12 +21,12 @@ export const Footer: FC = () => (
     <div className="flex lg:social-icons sm:social-icons social-icons">
       <div className="w-48 mr-4">
         <a href="">
-          <Icon src={Facebook} />
+          <Icon src={Facebook} className="w-40" />
         </a>
       </div>
       <div className="w-48 ml-4">
         <a href="">
-          <Icon src={Instagram} />
+          <Icon src={Instagram} className="w-40" />
         </a>
       </div>
     </div>
