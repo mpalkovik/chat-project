@@ -32,27 +32,13 @@ export const AllArticles = () => {
       name: "Nazov článku resp. novinky",
       description:
         "A paragraph from the Greek paragraphos, to write beside written beside is a self-contained unit of […]"
-    },
-    {
-      alt: "article",
-      icon: homer,
-      name: "Nazov článku resp. novinky",
-      description:
-        "A paragraph from the Greek paragraphos, to write beside written beside is a self-contained unit of […]"
-    },
-    {
-      alt: "article",
-      icon: homer,
-      name: "Nazov článku resp. novinky",
-      description:
-        "A paragraph from the Greek paragraphos, to write beside written beside is a self-contained unit of […]"
     }
   ];
   return (
-    <div className="p-6 lg:p-12">
-      <div className="w-full bg-white lg:flex flex-wrap w-3/4 m-auto">
+    <div className="w-full m-auto p-10 lg:p-20">
+      <div className="bg-white w-full flex flex-wrap">
         {article.map(({ icon, name, description, alt }) => (
-          <div key={name} className="w-full p-1 lg:w-1/3">
+          <div key={name} className="w-full p-1 md:w-1/2 lg:w-1/3">
             <Thumbnail
               icon={icon}
               name={name}

@@ -15,6 +15,7 @@ import { Footer } from "../components/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import "../style/index.css";
 import "../style/fonts.css";
+import { Container } from "../components/ArticleByCategory.tsx/Container";
 
 storiesOf("Buttons", module)
   .add("Button", () => <Button>Button</Button>)
@@ -60,4 +61,7 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
+));
+storiesOf("ArticleByCategory", module).add("ArticleByCategory", () => (
+  <Container />
 ));

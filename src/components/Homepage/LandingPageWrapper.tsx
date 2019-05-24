@@ -1,9 +1,9 @@
 import React from "react";
 import { List } from "./List";
-import { Button } from "./Button";
-import { Description } from "./Description";
+import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
-import { DescriptionWrapper } from "./DescriptionWrapper";
+import { DescriptionWrapper } from "../Description/DescriptionWrapper";
+import { DescAndButton } from "../Description/DescrAndButton";
 import { BackgroundImage } from "./BackgroundImage";
 import background from "../../static/svg/backgroundImage.svg";
 
@@ -22,12 +22,7 @@ export const LandingPageWrapper = () => {
       </DescriptionWrapper>
       <List />
       <DescriptionWrapper>
-        <Description>
-          Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
-        </Description>
-        <div className="w-48 m-auto mt-6 bg-black rounded-lg">
-          <Button>Registrovať sa</Button>
-        </div>
+        <DescAndButton />
       </DescriptionWrapper>
     </BackgroundImage>
   );
