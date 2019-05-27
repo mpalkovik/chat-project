@@ -10,7 +10,7 @@ import background from "../../static/svg/backgroundImage.svg";
 export const LandingPageWrapper = () => {
   return (
     <BackgroundImage url={background} isCover>
-      <div className="pt-4 pb-24">
+      <div className="pt-16 pb-96">
         <Logo />
       </div>
       <DescriptionWrapper>
