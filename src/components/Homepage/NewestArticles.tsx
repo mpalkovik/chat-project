@@ -10,43 +10,37 @@ interface IArticle {
   title_photo: string;
 }
 
-// TODO: load image from the external resource (server)
-
-// TODO: define action for the thumbnail button
-//       (add another thumbnail prop maybe with function
-//       that redirect us to the articles page and sends id of the article to display
-//       in article page: get id and in useeffect hook fetch the entire article and display it
-//       should be easy, I hope)
-// TODO: when the page that shows all articles will be finished -> add action on "Všetky články"
-//       button
 export const NewestArticles = () => {
   const [articles, setArticles] = useState([]);
-
+  const [loadingError, setLoadingError] = useState(false);
   useEffect(() => {
-    // we don't need catch here... maybe throw error message?
     fetch("http://localhost/api/article/newest")
       .then(response => response.json())
-      .then(response => setArticles(response));
+      .then(response => setArticles(response))
+      .catch(error => setLoadingError(true));
   }, []);
-
   return (
     <div className="m-0 bg-white relative lg:m-12 text-center pl-8 pr-8 lg:pl-32 lg:pr-32 shadow">
-      <div className="p-6">
-        <h1 className="font-gilbert text-2xl">Arteterapie</h1>
-      </div>
+      <h1 className="font-gilbert text-2xl m-6">Najnovšie články</h1>
       <div className="flex flex-col items-center justify-center lg:flex-row">
         {articles.length === 0 ? (
-          <div>No articles loaded :(</div>
+          loadingError ? (
+            <div>Server error</div>
+          ) : (
+            <div>Loading articles...</div>
+          )
         ) : (
           articles.map((article: IArticle) => (
             <div
-              style={{ maxWidth: "350px" }}
+              style={{ width: "230px", height: "304px" }}
               key={article.id}
               className="ml-0 mt-2 lg:mt-0 lg:ml-2"
             >
               <Thumbnail
                 name={article.heading}
-                icon={"http://localhost/storage/" + article.title_photo}
+                icon={
+                  "http://localhost/api/image/214/160/" + article.title_photo
+                }
                 alt="super"
                 description={article.insight}
               />
