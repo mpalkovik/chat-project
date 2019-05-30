@@ -1,6 +1,6 @@
 #!/bin/bash
 #ghprbPullId=$1
-#VERSION=$1
+VERSION=$1
 
 ### curl -s https://api.github.com/repos/garySiladi/chat-project/pulls?state=open | jq '.[] | "\(.number) \(.head.sha)"'
 
