@@ -1,5 +1,5 @@
 node:
-    container_name: chat-project-${VERSION}
+    container_name: chat-project_${VERSION}
     env_file:
       - docker-compose.env
     image: chat-project_node:${VERSION}
