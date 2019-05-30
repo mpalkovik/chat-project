@@ -7,6 +7,6 @@ node:
     ports:
 #        - "80:80"
         - "${PORT_NODE}:1234"
-    volumes:
-        - /home/mpalkovik/chat-project/git:/tmp
-    working_dir: /tmp
+#    volumes:
+#        - /home/mpalkovik/chat-project/git:/tmp
+#    working_dir: /tmp
