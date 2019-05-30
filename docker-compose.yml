@@ -1,13 +1,8 @@
-node:
-    container_name: chat-project_${VERSION}
-    env_file:
-      - docker-compose.env
-    image: chat-project_node:${VERSION}
-#    image: node:latest
-#    command: bash -c "npm install && npm run-script build && npm start"
-    ports:
-#        - "80:80"
-        - "${PORT_NODE}:1234"
-#    volumes:
-#        - /home/mpalkovik/chat-project/git:/tmp
-#    working_dir: /tmp
+version: 2
+    node:
+        container_name: chat-project_${VERSION}
+        env_file:
+          - docker-compose.env
+        image: chat-project_node:${VERSION}
+        ports:
+            - "${PORT_NODE}:1234"
