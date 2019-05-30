@@ -1,8 +1,10 @@
-version: 2
-    node:
-        container_name: chat-project_${VERSION}
-        env_file:
-          - docker-compose.env
-        image: chat-project_node:${VERSION}
-        ports:
-            - "${PORT_NODE}:1234"
+version: "2"
+
+services:
+  node:
+    container_name: chat-project_${VERSION}
+    env_file:
+      - docker-compose.env
+    image: chat-project_node:${VERSION}
+    ports:
+      - "${PORT_NODE}:1234"
