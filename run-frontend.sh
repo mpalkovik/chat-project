@@ -1,28 +1,20 @@
 #!/bin/bash
-#REPO_DIR=/opt/chat-project
-REPO_DIR=.
-
-############################
-#      FOR TEST ONLY
-ghprbPullId=$1
-############################
-
-
+REPO_DIR=$(pwd)
 #VERSION=${ghprbPullId}
-#HOME=$(pwd)
-
+VERSION=$1
 
 # build node docker image
-#if [ ! -z $VERSION ];then
-if [ ! -z ${ghprbPullId} ];then
-   docker build $REPO_DIR -t chat-project_node:${ghprbPullId}
+if [ ! -z $VERSION ];then
+#if [ ! -z ${ghprbPullId} ];then
+   docker build $REPO_DIR -t chat-project_node:$VERSION
+#   docker build $REPO_DIR -t chat-project_node:${ghprbPullId}
 else
    docker build $REPO_DIR -t chat-project_node
 fi
 # create docker-compose .env file
-echo "VERSION=${ghprbPullId}" > $REPO_DIR/.env
-echo "PORT_NODE=$(( 12000 + ${ghprbPullId} ))" >> $REPO_DIR/.env
+echo "DOCKER_VERSION=$VERSION" > $REPO_DIR/.env
+echo "DOCKER_PORT_NODE=$(( 12000 + $VERSION ))" >> $REPO_DIR/.env
 
 # bring up docker-compose
-docker-compose up -d
+docker-compose -p chat-project-v_$VERSION up -d
 
