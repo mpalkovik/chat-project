@@ -1,6 +1,6 @@
 version: "3.7"
 services:
   node:
-    image: chat-project_node:${VERSION}
+    image: chat-project_node:${DOCKER_VERSION}
     ports:
-      - "${PORT_NODE}:1234"
+      - "${DOCKER_PORT_NODE}:1234"
