@@ -2,6 +2,10 @@
 REPO_DIR=$(pwd)
 VERSION=$1
 
+#start=$(jq ".scripts.start" package.json | tr -d "\"")
+#end=$(sed 's/\-\-open //' <<< $start)
+#jq --arg start "$start" --arg end "$end" '(.scripts | select(.start == $start).start) = "'"$end"'"' package.json
+
 # build node docker image
 if [ ! -z $VERSION ];then
    docker build $REPO_DIR -t chat-project_node:$VERSION
