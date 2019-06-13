@@ -16,3 +16,9 @@ do
    fi
 done
 
+# clean latest requests
+if [ ! -z $(docker ps | grep -wo "chat-project_node:latest") ];then
+   echo "cleaning chat-project-v_latest"
+   docker-compose -p chat-project-v_latest down
+fi
+
