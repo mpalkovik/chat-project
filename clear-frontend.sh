@@ -11,6 +11,7 @@ do
    if [ "$pr" == "$to_clean" ];then
       echo "cleaning chat-project-v_$to_clean"
       docker-compose -p chat-project-v_$to_clean down
+      docker rmi chat-project_node:$pr
 #   else
 #      echo "nothing to clean"
    fi
