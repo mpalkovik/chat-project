@@ -11,8 +11,15 @@ do
    if [ "$pr" == "$to_clean" ];then
       echo "cleaning chat-project-v_$to_clean"
       docker-compose -p chat-project-v_$to_clean down
+      docker rmi chat-project_node:$pr
 #   else
 #      echo "nothing to clean"
    fi
 done
+
+# clean latest requests
+if [ ! -z $(docker ps | grep -wo "chat-project_node:latest") ];then
+   echo "cleaning chat-project-v_latest"
+   docker-compose -p chat-project-v_latest down
+fi
 
